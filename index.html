@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda Aprilla Dalimunthe - Web Portfolio</title>
+    <meta name="description"
+        content="Portfolio Pribadi Dinda Aprilla Dalimunthe, Fresh Graduate Teknik Informatika. Pengembang Mobile App, Data Science & Deep Learning, Game Dev (Godot), Web.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Glow & Particles -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-name">Dinda Aprilla Dalimunthe</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active" id="nav-hero-link"><i class="fa-solid fa-house"></i> Beranda</a>
+                <a href="#about" class="nav-link" id="nav-about-link"><i class="fa-solid fa-user"></i> Tentang</a>
+                <a href="#skills" class="nav-link" id="nav-skills-link"><i class="fa-solid fa-code"></i> Keahlian</a>
+                <a href="#projects" class="nav-link" id="nav-projects-link"><i class="fa-solid fa-laptop-code"></i>
+                    Proyek</a>
+                <a href="#contact" class="nav-link" id="nav-contact-link"><i class="fa-solid fa-paper-plane"></i>
+                    Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-neon-sm" id="nav-cta-btn">
+                    <span>Hubungi Saya</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Fresh Graduate Teknik Informatika
+                    </div>
+                    <h1 class="hero-title">
+                        Halo, Saya <br>
+                        <span class="text-gradient">Dinda Aprilla Dalimunthe</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Software Developer, Data Scientist & Game Developer yang berfokus pada <strong>Machine Learning
+                            & Deep Learning</strong>, <strong>Mobile Apps (Flutter)</strong>, <strong>Game Dev (Godot
+                            Engine)</strong>, serta <strong>Web & IoT Solutions</strong>.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-neon" id="hero-view-projects">
+                            <i class="fa-solid fa-rocket"></i> Lihat Proyek Akademik
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+                            <i class="fa-solid fa-envelope"></i> Kontak Saya
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="8">8+</span>
+                            <span class="stat-label">Proyek Akademik</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="6">6+</span>
+                            <span class="stat-label">Teknologi Utama</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">3.8+</span>
+                            <span class="stat-label">IPK / Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-card-wrapper">
+                        <!-- Profile Photo Card (Clean Full View) -->
+                        <div class="profile-photo-card glass-panel">
+                            <div class="profile-glow"></div>
+                            <div class="profile-img-container">
+                                <img src="assets/dinda_profile.jpg" alt="Dinda Aprilla Dalimunthe" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;tentang-saya&gt;</span>
+                    <h2 class="section-title">Profil & Latar Belakang</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Pendidikan & Kompetensi</h3>
+                        <p>
+                            Lulusan Teknik Informatika dengan pemahaman mendalam tentang ilmu komputer fundamental,
+                            pemodelan Machine Learning & Deep Learning (Computer Vision), pengembangan game 2D berbasis
+                            Godot, dan aplikasi mobile Flutter.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>AI, Data & Game Engineering</h3>
+                        <p>
+                            Menguasai transfer learning (EfficientNetB3, TensorFlow/Keras), klasifikasi ML (CatBoost,
+                            SMOTE, SHAP), serta pengembangan game 2D interaktif (Godot Engine & GDScript physics).
+                        </p>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <div class="about-icon-box">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Fokus Karir</h3>
+                        <p>
+                            Siap berkontribusi secara profesional sebagai Data Scientist, Machine Learning / Computer
+                            Vision Engineer, Game Developer (Godot), atau Mobile App Developer di industri teknologi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;keahlian-teknis&gt;</span>
+                    <h2 class="section-title">Tech Stack & Tools</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Category 1: AI, Deep Learning & Python -->
+                    <div class="skill-category glass-panel">
+                        <h3 class="skill-cat-title"><i class="fa-solid fa-brain"></i> Data Science, ML & Deep Learning
+                        </h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-python color-python"></i> Python (TensorFlow, Keras,
+                                        EfficientNetB3)</span>
+                                    <span class="skill-percent">94%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 94%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-eye color-shap"></i> Computer Vision & Machine Learning
+                                        (CatBoost, SHAP)</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-sliders color-ai"></i> Data Preprocessing & Augmentation
+                                        (SMOTE)</span>
+                                    <span class="skill-percent">91%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 91%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Game Dev, Mobile & Web -->
+                    <div class="skill-category glass-panel">
+                        <h3 class="skill-cat-title"><i class="fa-solid fa-gamepad"></i> Game Dev, Mobile & Systems</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-gamepad color-godot"></i> Godot Engine & GDScript (2D
+                                        Physics)</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-flutter color-flutter"></i> Flutter & Dart</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-brands fa-js color-js"></i> JavaScript (ES6+) & Web</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Tags Grid -->
+                <div class="tech-pills">
+                    <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="pill"><i class="fa-solid fa-brain"></i> TensorFlow & Keras</span>
+                    <span class="pill"><i class="fa-solid fa-eye"></i> EfficientNetB3</span>
+                    <span class="pill"><i class="fa-solid fa-gamepad"></i> Godot Engine</span>
+                    <span class="pill"><i class="fa-solid fa-code"></i> GDScript</span>
+                    <span class="pill"><i class="fa-solid fa-cubes"></i> CatBoost & Scikit-learn</span>
+                    <span class="pill"><i class="fa-solid fa-sliders"></i> SMOTE & SHAP</span>
+                    <span class="pill"><i class="fa-brands fa-flutter"></i> Flutter & Dart</span>
+                    <span class="pill"><i class="fa-solid fa-database"></i> SQLite</span>
+                    <span class="pill"><i class="fa-solid fa-microchip"></i> ESP32 IoT</span>
+                    <span class="pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;portfolio-karya&gt;</span>
+                    <h2 class="section-title">Pengalaman Proyek Akademik</h2>
+                    <p class="section-subtitle">Daftar proyek unggulan yang dikembangkan selama studi Teknik Informatika
+                    </p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls" id="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Semua Proyek (8)</button>
+                    <button class="filter-btn" data-filter="ai"><i class="fa-solid fa-brain"></i> Data Science &
+                        AI/ML</button>
+                    <button class="filter-btn" data-filter="game"><i class="fa-solid fa-gamepad"></i> Game Dev</button>
+                    <button class="filter-btn" data-filter="mobile"><i class="fa-solid fa-mobile-screen"></i> Mobile
+                        App</button>
+                    <button class="filter-btn" data-filter="web"><i class="fa-solid fa-globe"></i> Web
+                        Application</button>
+                    <button class="filter-btn" data-filter="iot"><i class="fa-solid fa-wifi"></i> IoT Systems</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Project 8 (NEW: Indian & Korean Food Classification) -->
+                    <article class="project-card glass-panel featured-project" data-category="ai" data-id="p8">
+                        <div class="card-visual visual-cv">
+                            <div class="visual-badge badge-ml">Deep Learning · Computer Vision</div>
+                            <div class="visual-art">
+                                <div class="art-food-cv">
+                                    <div class="food-cam-frame">
+                                        <i class="fa-solid fa-bowl-food food-icon"></i>
+                                        <div class="scan-line"></div>
+                                        <span class="detect-tag">EfficientNetB3</span>
+                                    </div>
+                                    <div class="cv-metrics-mini">
+                                        <div class="metric-row"><span class="m-flag">🇮🇳 India:</span> <strong
+                                                class="m-val">92.23%</strong></div>
+                                        <div class="metric-row"><span class="m-flag">🇰🇷 Korea:</span> <strong
+                                                class="m-val">98.70%</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag tag-highlight">Python</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">Keras</span>
+                                <span class="tag">EfficientNetB3</span>
+                            </div>
+                            <h3 class="card-title">Indian & Korean Food Classification</h3>
+                            <p class="card-desc">
+                                Mengembangkan sistem klasifikasi citra makanan India dan Korea menggunakan transfer
+                                learning EfficientNetB3. Dataset diproses melalui image resizing, normalization,
+                                augmentation, dan evaluasi menggunakan berbagai metrik klasifikasi.
+                            </p>
+                            <div class="project-metric-badge">
+                                <i class="fa-solid fa-bullseye"></i> <strong>92.23%</strong> India ·
+                                <strong>98.70%</strong> Korea
+                            </div>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p8">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 (Mental Health Classification) -->
+                    <article class="project-card glass-panel" data-category="ai" data-id="p7">
+                        <div class="card-visual visual-ml">
+                            <div class="visual-badge badge-ml">Data Science · Machine Learning</div>
+                            <div class="visual-art">
+                                <div class="art-ml-accuracy">
+                                    <div class="acc-meter">
+                                        <svg viewBox="0 0 36 36" class="circular-chart pink">
+                                            <path class="circle-bg"
+                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                            <path class="circle" stroke-dasharray="97, 100"
+                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <div class="acc-text">96.95%</div>
+                                    </div>
+                                    <div class="shap-mini-bars">
+                                        <div class="shap-title"><i class="fa-solid fa-chart-bar"></i> SHAP Analysis
+                                        </div>
+                                        <div class="shap-bar bar-p1"></div>
+                                        <div class="shap-bar bar-p2"></div>
+                                        <div class="shap-bar bar-p3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag tag-highlight">Python</span>
+                                <span class="tag">CatBoost</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">SMOTE</span>
+                                <span class="tag">SHAP</span>
+                            </div>
+                            <h3 class="card-title">Mental Health Classification</h3>
+                            <p class="card-desc">
+                                Membangun model klasifikasi untuk memprediksi pilihan layanan kesehatan mental
+                                berdasarkan karakteristik demografis, perilaku, dan psikologis. Proyek mencakup data
+                                preprocessing, penanganan class imbalance menggunakan SMOTE, hyperparameter tuning,
+                                serta interpretasi model menggunakan SHAP.
+                            </p>
+                            <div class="project-metric-badge">
+                                <i class="fa-solid fa-trophy"></i> <strong>96.95%</strong> Test Accuracy
+                            </div>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p7">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 UPDATED: Game 2D (FlyHero) - Godot Engine -->
+                    <article class="project-card glass-panel" data-category="game" data-id="p5">
+                        <div class="card-visual visual-game">
+                            <div class="visual-badge badge-godot">Game Development · 2D Game</div>
+                            <div class="visual-art">
+                                <div class="art-game-canvas">
+                                    <div class="godot-logo-mini"><i class="fa-solid fa-gamepad"></i> GODOT 2D</div>
+                                    <div class="hero-sprite"><i class="fa-solid fa-jet-fighter"></i></div>
+                                    <div class="obstacle obs-1"></div>
+                                    <div class="obstacle obs-2"></div>
+                                    <div class="game-score">ENGINE: GODOT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag tag-highlight">Godot Engine</span>
+                                <span class="tag">GDScript</span>
+                                <span class="tag">2D Physics</span>
+                            </div>
+                            <h3 class="card-title">Game 2D (FlyHero)</h3>
+                            <p class="card-desc">
+                                Mengembangkan game arcade 2D bertema penerbangan menggunakan Godot Engine. Game memiliki
+                                mekanisme pergerakan karakter, deteksi tabrakan, sistem skor, serta physics objek untuk
+                                menciptakan gameplay yang interaktif dan responsif.
+                            </p>
+                            <div class="project-metric-badge">
+                                <i class="fa-solid fa-gamepad"></i> Engine: <strong>Godot Engine</strong>
+                            </div>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p5">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 1 -->
+                    <article class="project-card glass-panel" data-category="mobile" data-id="p1">
+                        <div class="card-visual visual-reminder">
+                            <div class="visual-badge">Mobile App</div>
+                            <div class="visual-art">
+                                <div class="art-app-screen">
+                                    <div class="screen-header">
+                                        <i class="fa-solid fa-bell bell-anim"></i>
+                                        <span>Daily Reminder</span>
+                                    </div>
+                                    <div class="screen-content">
+                                        <div class="screen-item active-item"><i class="fa-solid fa-circle-check"></i>
+                                            Tugas Akhir TI (09:00)</div>
+                                        <div class="screen-item"><i class="fa-regular fa-clock"></i> Jadwal Kuliah
+                                            (13:30)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Rule-Based</span>
+                            </div>
+                            <h3 class="card-title">Mobile Reminder App</h3>
+                            <p class="card-desc">
+                                Aplikasi pengingat aktivitas harian cerdas menggunakan sistem berbasis aturan
+                                (rule-based system) untuk penentuan prioritas notifikasi dan penyimpanan SQLite lokal.
+                            </p>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p1">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-panel" data-category="iot" data-id="p2">
+                        <div class="card-visual visual-doorlock">
+                            <div class="visual-badge">IoT System</div>
+                            <div class="visual-art">
+                                <div class="art-doorlock">
+                                    <div class="lock-icon locked"><i class="fa-solid fa-lock"></i></div>
+                                    <div class="iot-signal"><i class="fa-solid fa-wifi pulse"></i></div>
+                                    <div class="esp-chip">ESP32 BOARD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag">ESP32</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Web Dashboard</span>
+                            </div>
+                            <h3 class="card-title">Smart Doorlock System</h3>
+                            <p class="card-desc">
+                                Sistem pengunci pintu pintar berbasis mikrokontroler ESP32 dengan kendali jarak jauh web
+                                dashboard dan integrasi sensor keamanan otomatis.
+                            </p>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p2">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-panel" data-category="mobile" data-id="p3">
+                        <div class="card-visual visual-ticket">
+                            <div class="visual-badge">Mobile App</div>
+                            <div class="visual-art">
+                                <div class="art-ticket">
+                                    <i class="fa-solid fa-ticket ticket-icon"></i>
+                                    <div class="ticket-line"></div>
+                                    <div class="qr-mock"><i class="fa-solid fa-qrcode"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Dart</span>
+                                <span class="tag">Local Storage</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <h3 class="card-title">Aplikasi Pemesanan Tiket</h3>
+                            <p class="card-desc">
+                                Aplikasi pemesanan tiket acara & transportasi berbasis mobile dengan fitur pemetaan
+                                kursi interaktif, e-ticket QR Code, dan manajemen pesanan.
+                            </p>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p3">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card glass-panel" data-category="web" data-id="p4">
+                        <div class="card-visual visual-karaoke">
+                            <div class="visual-badge">Web Application</div>
+                            <div class="visual-art">
+                                <div class="art-equalizer">
+                                    <div class="eq-bar bar-1"></div>
+                                    <div class="eq-bar bar-2"></div>
+                                    <div class="eq-bar bar-3"></div>
+                                    <div class="eq-bar bar-4"></div>
+                                    <div class="eq-bar bar-5"></div>
+                                    <i class="fa-solid fa-microphone mic-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag">HTML/CSS/JS</span>
+                                <span class="tag">Web Audio API</span>
+                                <span class="tag">Lyrics Sync</span>
+                            </div>
+                            <h3 class="card-title">Aplikasi Karaoke Berbasis Web</h3>
+                            <p class="card-desc">
+                                Platform karaoke interaktif di web dengan sinkronisasi lirik otomatis real-time, kontrol
+                                pitch audio, serta visualizer spektrum nada suara.
+                            </p>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p4">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card glass-panel" data-category="web" data-id="p6">
+                        <div class="card-visual visual-shop">
+                            <div class="visual-badge">E-Commerce Web</div>
+                            <div class="visual-art">
+                                <div class="art-shop">
+                                    <div class="shop-card-mini">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <span>Product Showcase</span>
+                                    </div>
+                                    <div class="cart-pill"><i class="fa-solid fa-cart-shopping"></i> 3 Items</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-techs">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3 class="card-title">Web E-Commerce Sederhana</h3>
+                            <p class="card-desc">
+                                Website toko online responsif dengan katalog produk dinamis, sistem keranjang belanja
+                                interaktif, dan rincian transaksi belanja.
+                            </p>
+                            <button class="btn btn-card-detail open-modal-btn" data-project="p6">
+                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;kontak-saya&gt;</span>
+                    <h2 class="section-title">Mari Terhubung</h2>
+                    <p class="section-subtitle">Tertarik untuk merekrut atau berkolaborasi? Kirimkan pesan Anda di bawah
+                        ini!</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info glass-panel">
+                        <h3>Informasi Kontak</h3>
+                        <p>Saya terbuka untuk kesempatan kerja full-time, contract, maupun kolaborasi proyek software
+                            development, AI/ML & Game Dev.</p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:da133450@gmail.com" class="info-val">da133450@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-label">Lokasi</span>
+                                    <span class="info-val">Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div>
+                                    <span class="info-label">Status</span>
+                                    <span class="info-val">Fresh Graduate Teknik Informatika</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-btn"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:da133450@gmail.com" aria-label="Email Direct" class="social-btn"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass-panel" id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Nama Lengkap</label>
+                            <input type="text" id="form-name" placeholder="Masukkan nama Anda..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Alamat Email</label>
+                            <input type="email" id="form-email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subjek Pesan</label>
+                            <input type="text" id="form-subject" placeholder="Tawaran Kerja / Proyek / Konsultasi"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Pesan Anda</label>
+                            <textarea id="form-message" rows="4" placeholder="Tuliskan pesan Anda di sini..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-neon btn-block" id="form-submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Ke da133450@gmail.com
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-name">Dinda Aprilla Dalimunthe</span>
+                <p class="footer-tagline">Fresh Graduate Teknik Informatika · Software Developer & Data Science Enthusiast</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Project Modal -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true">
+        <div class="modal-container glass-panel">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be injected dynamically via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
