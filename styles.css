@@ -1328,6 +1328,23 @@ h1, h2, h3, h4 {
     margin-top: 6px;
 }
 
+.footer-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font-code);
+    transition: var(--transition-fast);
+}
+
+.footer-github-link:hover {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
 .footer-divider {
     width: 60px;
     height: 2px;
