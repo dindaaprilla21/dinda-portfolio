@@ -47,17 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
             metrics: "Engine: Godot Engine | GDScript 2D Physics"
         },
         p1: {
-            title: "Mobile Reminder App",
+            title: "Reminder AI",
             category: "Mobile Application",
-            techStack: ["Flutter", "Dart", "SQLite", "Rule-Based Algorithm", "Local Notifications"],
-            description: "Aplikasi pengingat harian cerdas yang dirancang untuk membantu pengguna mengelola jadwal perkuliahan dan tugas akademik. Sistem menggunakan algoritma berbasis aturan (rule-based system) untuk memprioritaskan notifikasi pengingat berdasarkan tingkat urgensi tugas.",
+            techStack: ["Flutter", "Dart", "SQLite", "SAW Method", "Rule-Based System", "Android"],
+            description: "Mengembangkan aplikasi mobile Reminder AI berbasis Android untuk membantu mahasiswa mengelola tugas dan deadline secara lebih terstruktur. Aplikasi menggunakan metode SAW untuk menentukan prioritas tugas dan Rule-Based System untuk memberikan rekomendasi jadwal belajar. Dilengkapi dengan notifikasi deadline, pengingat harian, kalender, serta mode terang dan gelap.",
             features: [
-                "Notifikasi pengingat otomatis dengan kustomisasi suara dan getar.",
-                "Penyimpanan database SQLite lokal yang aman dan offline-first.",
-                "Penentuan tingkat prioritas tugas secara otomatis berbasis aturan.",
-                "Antarmuka pengguna (UI) modern dengan pilihan mode gelap."
+                "Metode SAW (Simple Additive Weighting): Menghitung dan menentukan tingkat prioritas tugas mahasiswa secara sistematis.",
+                "Rule-Based System: Memberikan rekomendasi jadwal belajar yang disesuaikan dengan beban tugas harian.",
+                "Manajemen Tugas Lengkap: Dilengkapi notifikasi deadline otomatis, pengingat harian, serta tampilan kalender interaktif.",
+                "Tampilan Fleksibel: Dukungan tema terang (Light Mode) dan mode gelap (Dark Mode) yang intuitif."
             ],
-            metrics: "99% Notifikasi Terkirim Tepat Waktu | SQLite Local Storage"
+            metrics: "SAW Method & Rule-Based System | SQLite Database"
         },
         p2: {
             title: "Smart Doorlock System",
