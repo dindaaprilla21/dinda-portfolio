@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p8: {
             title: "Indian & Korean Food Classification",
             category: "Deep Learning · Computer Vision",
+            githubUrl: "https://github.com/da133450-ux/food-image-classification",
             techStack: ["Python", "TensorFlow", "Keras", "EfficientNetB3", "Transfer Learning", "Image Augmentation"],
             description: "Mengembangkan sistem klasifikasi citra makanan India dan Korea menggunakan transfer learning EfficientNetB3. Dataset diproses melalui image resizing, normalization, augmentation, dan evaluasi menggunakan berbagai metrik klasifikasi.",
             features: [
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p7: {
             title: "Mental Health Classification",
             category: "Data Science · Machine Learning",
+            githubUrl: "https://github.com/da133450-ux/mental-health-classification",
             techStack: ["Python", "CatBoost", "Scikit-learn", "SMOTE", "SHAP"],
             description: "Membangun model klasifikasi untuk memprediksi pilihan layanan kesehatan mental berdasarkan karakteristik demografis, perilaku, dan psikologis. Proyek mencakup data preprocessing komprehensif, penanganan class imbalance menggunakan SMOTE, hyperparameter tuning, serta interpretasi model menggunakan SHAP.",
             features: [
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p5: {
             title: "Game 2D (FlyHero)",
             category: "Game Development · 2D Game",
+            githubUrl: "https://github.com/da133450-ux/flyhero-2d-game",
             techStack: ["Godot Engine", "GDScript", "2D Physics", "Collision Detection"],
             description: "Mengembangkan game arcade 2D bertema penerbangan menggunakan Godot Engine. Game memiliki mekanisme pergerakan karakter, deteksi tabrakan, sistem skor, serta physics objek untuk menciptakan gameplay yang interaktif dan responsif.",
             features: [
@@ -49,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p1: {
             title: "Reminder AI",
             category: "Mobile Application",
+            githubUrl: "https://github.com/da133450-ux/reminder-ai-app",
             techStack: ["Flutter", "Dart", "SQLite", "SAW Method", "Rule-Based System", "Android"],
             description: "Mengembangkan aplikasi mobile Reminder AI berbasis Android untuk membantu mahasiswa mengelola tugas dan deadline secara lebih terstruktur. Aplikasi menggunakan metode SAW untuk menentukan prioritas tugas dan Rule-Based System untuk memberikan rekomendasi jadwal belajar. Dilengkapi dengan notifikasi deadline, pengingat harian, kalender, serta mode terang dan gelap.",
             features: [
@@ -62,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p2: {
             title: "Smart Doorlock System",
             category: "IoT & Hardware System",
+            githubUrl: "https://github.com/da133450-ux/smart-doorlock-esp32",
             techStack: ["ESP32 Microcontroller", "C++ / Arduino IDE", "Solenoid Door Lock", "RFID Sensor", "Web Dashboard"],
             description: "Sistem kunci pintu pintar terintegrasi IoT yang memungkinkan penguncian dan pembukaan pintu secara nirkabel melalui web dashboard serta akses kartu RFID. Dilengkapi sensor keamanan otomatis yang mengirimkan sinyal peringatan jika ada gangguan fisik.",
             features: [
@@ -75,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p3: {
             title: "Aplikasi Pemesanan Tiket Mobile",
             category: "Mobile Application",
+            githubUrl: "https://github.com/da133450-ux/ticket-booking-flutter",
             techStack: ["Flutter", "Dart", "Provider State Management", "Shared Preferences", "QR Code Generator"],
             description: "Platform pemesanan tiket acara dan perjalanan berbasis mobile. Menyediakan pengalaman pengguna yang mulus dalam memilih tanggal, tempat duduk, hingga penerbitan E-Ticket berwujud QR Code untuk verifikasi langsung.",
             features: [
@@ -88,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p4: {
             title: "Aplikasi Karaoke Berbasis Web",
             category: "Web Application",
+            githubUrl: "https://github.com/da133450-ux/web-karaoke-app",
             techStack: ["HTML5", "CSS3", "JavaScript", "Web Audio API", "HTML5 Audio Sync"],
             description: "Aplikasi hiburan karaoke interaktif berbasis peramban web tanpa memerlukan plugin tambahan. Memanfaatkan Web Audio API untuk pemrosesan sinyal audio real-time dan pencocokan lirik lagu yang presisi.",
             features: [
@@ -101,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p6: {
             title: "Web E-Commerce Sederhana",
             category: "Web Application",
+            githubUrl: "https://github.com/da133450-ux/ecommerce-web",
             techStack: ["HTML5", "CSS3 Grid/Flexbox", "JavaScript", "LocalStorage API"],
             description: "Website toko online responsif yang menyediakan pengalaman belanja intuitif. Dilengkapi fitur filter kategori produk, kalkulasi total belanja otomatis, dan penyimpanan keranjang belanja.",
             features: [
@@ -235,6 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span style="font-size: 0.85rem; color: var(--neon-cyan); font-weight: 600;">
                         <i class="fa-solid fa-chart-line"></i> Technical Metric: ${data.metrics}
                     </span>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <a href="${data.githubUrl}" target="_blank" class="btn btn-neon-sm" style="display: inline-flex; align-items: center; gap: 8px;">
+                        <i class="fa-brands fa-github"></i> Buka Repository Kode di GitHub
+                    </a>
                 </div>
             </div>
         `;
