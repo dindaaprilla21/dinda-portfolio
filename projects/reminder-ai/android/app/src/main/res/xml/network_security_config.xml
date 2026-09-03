@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration untuk Reminder AI
+    - Melarang semua HTTP cleartext traffic (hanya HTTPS)
+    - Tidak ada domain eksternal karena app berjalan offline dengan SQLite lokal
+    - Konfigurasi ini memastikan keamanan distribusi APK di Google Play Protect
+-->
+<network-security-config>
+    <!-- Tidak ada cleartext HTTP diizinkan sama sekali -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Hanya percaya CA resmi yang sudah diverifikasi sistem -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
