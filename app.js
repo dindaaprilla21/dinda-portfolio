@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p1: {
             title: "Reminder AI",
             category: "Mobile Application",
-            githubUrl: "https://github.com/da133450-ux/reminder-ai-app",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/reminder-ai",
             techStack: ["Flutter", "Dart", "SQLite", "SAW Method", "Rule-Based System", "Android"],
             description: "Mengembangkan aplikasi mobile Reminder AI berbasis Android untuk membantu mahasiswa mengelola tugas dan deadline secara lebih terstruktur. Aplikasi menggunakan metode SAW untuk menentukan prioritas tugas dan Rule-Based System untuk memberikan rekomendasi jadwal belajar. Dilengkapi dengan notifikasi deadline, pengingat harian, kalender, serta mode terang dan gelap.",
             features: [
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p2: {
             title: "Smart Doorlock System",
             category: "IoT & Hardware System",
-            githubUrl: "https://github.com/da133450-ux/smart-doorlock-esp32",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects",
             techStack: ["ESP32 Microcontroller", "C++ / Arduino IDE", "Solenoid Door Lock", "RFID Sensor", "Web Dashboard"],
             description: "Sistem kunci pintu pintar terintegrasi IoT yang memungkinkan penguncian dan pembukaan pintu secara nirkabel melalui web dashboard serta akses kartu RFID. Dilengkapi sensor keamanan otomatis yang mengirimkan sinyal peringatan jika ada gangguan fisik.",
             features: [
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p3: {
             title: "Aplikasi Pemesanan Tiket Mobile",
             category: "Mobile Application",
-            githubUrl: "https://github.com/da133450-ux/ticket-booking-flutter",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/pemesanan-tiket",
             techStack: ["Flutter", "Dart", "Provider State Management", "Shared Preferences", "QR Code Generator"],
             description: "Platform pemesanan tiket acara dan perjalanan berbasis mobile. Menyediakan pengalaman pengguna yang mulus dalam memilih tanggal, tempat duduk, hingga penerbitan E-Ticket berwujud QR Code untuk verifikasi langsung.",
             features: [
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p4: {
             title: "Aplikasi Karaoke Berbasis Web",
             category: "Web Application",
-            githubUrl: "https://github.com/da133450-ux/web-karaoke-app",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-karaoke",
             techStack: ["HTML5", "CSS3", "JavaScript", "Web Audio API", "HTML5 Audio Sync"],
             description: "Aplikasi hiburan karaoke interaktif berbasis peramban web tanpa memerlukan plugin tambahan. Memanfaatkan Web Audio API untuk pemrosesan sinyal audio real-time dan pencocokan lirik lagu yang presisi.",
             features: [

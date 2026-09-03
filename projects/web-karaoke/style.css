@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: rgb(248, 239, 239);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+}
+
+
+.header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+/* Styling bagian daftar lagu (sebelah kiri) */
+.song-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #706d6d;
+    border-right: 2px solid #7a7070;
+    max-height: 80vh; /* Atur batas tinggi untuk daftar lagu */
+    overflow-y: auto; /* Tambahkan scroll jika melebihi tinggi */
+}
+
+.song-list h2 {
+    text-align: center;
+    color: #ebdfdf;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    outline: none;
+    
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #0c0808;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.song-list li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.song-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+    color: #c5d119;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.song-list li:hover {
+    background-color: #525151;
+    color: #b95959;
+}
+
+/* Styling bagian media player (sebelah kanan) */
+.media-player {
+    flex: 2;
+    padding: 20px;
+    background-color: #e9e4e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 5px solid #706d6d;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(230, 72, 72, 0.8);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #c2b0b0;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button:hover {
+    background-color: #796868;
+    transform: scale(1.1);
+}
+
+.controls button i {
+    font-size: 24px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .song-list {
+        flex: none;
+        height: 200px;
+        overflow-x: auto;
+    }
+
+    video {
+        width: 95%;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+}

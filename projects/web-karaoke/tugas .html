@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke App</title>
+    <!-- Link Google Fonts untuk font Lobster -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <!-- Link Font Awesome untuk icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header untuk judul Karaoke Time -->
+    <div class="header">
+        <img src="C:\Users\USER\Documents\KEL 6\image\logo.png" alt="Karaoke Logo" class="logo">
+        <h1>Karaoke Time</h1>
+    </div>
+    
+
+    <div class="main-content">
+        <!-- Kumpulan lagu (sebelah kiri) -->
+        <div class="song-list">
+            <h2>PLAYLIST</h2>
+            <div class="search-bar">
+                <input type="text" id="searchBar" onkeyup="searchSongs()" placeholder="Cari lagu...">
+            </div>
+            <ul id="songList">
+                <li><a href="#" onclick="playSong(0)">Kaleb - J - Dibalik Semua Pertanda</a></li>
+                <li><a href="#" onclick="playSong(1)">Bernadya - Untungnya</a></li>
+                <li><a href="#" onclick="playSong(2)">T2 - Lelaki Cadangan</a></li>
+                <li><a href="#" onclick="playSong(3)">Rossa - Pudar1</a></li>
+                <!-- Tambahkan lebih banyak lagu -->
+                <li><a href="#" onclick="playSong(4)">Febinda Tito - Tak Lagi Lagi</a></li>
+                <li><a href="#" onclick="playSong(5)">Mahalini - Sampai Ku Menutup Mata</a></li>
+                <li><a href="#" onclick="playSong(6)">Rossa - Pudar</a></li>
+                <li><a href="#" onclick="playSong(7)">Bernadya - satu Bulan</a></li>
+                <li><a href="#" onclick="playSong(8)">Fabio Asher - Rumah Singgah</a></li>
+                <li><a href="#" onclick="playSong(9)">NDX AKA - Nemen</a></li>
+                <li><a href="#" onclick="playSong(10)">Rizwan Fadilah - Tanpa Bicara</a></li>
+                <li><a href="#" onclick="playSong(11)">Meiska -Hilang Tanpa Bilang</a></li>
+                <li><a href="#" onclick="playSong(12)">Blackpink - Boombayah</a></li>
+                <li><a href="#" onclick="playSong(13)">Mahalini - Sial</a></li>
+                <li><a href="#" onclick="playSong(14)">Tiara Andini - Kupu - Kupu</a></li>
+                <li><a href="#" onclick="playSong(15)">Tiara Andini - Pernikahan Kita</a></li>
+            </ul>
+        </div>
+
+        <!-- Media Player (sebelah kanan) -->
+        <div class="media-player">
+            <video id="videoPlayer" controls>
+                <source src="songs/song1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="controls">
+                <button onclick="prevSong()">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button onclick="document.getElementById('videoPlayer').play()">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button onclick="document.getElementById('videoPlayer').pause()">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button onclick="nextSong()">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button onclick="document.getElementById('videoPlayer').volume += 1.5, 0, 1">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button onclick="document.getElementById('videoPlayer').volume -= 0.5">
+                    <i class="fas fa-volume-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const songList = [
+            {title: 'Kaleb J - Dibalik Pertanda', file: 'song1.mp4'},
+            {title: 'Bernadya - Untungnya ', file: 'song2.mp4'},
+            {title: 'T2 - Lelaki Cadangan', file: 'song3.mp4'},
+            {title: 'Rossa - Pudar1', file: 'song4.mp4'},
+            {title: 'Febinda Tito - Tak Lagi Lagi', file: 'song5.mp4'},
+            {title: 'Mahalini - Sampai Ku Menutup Mata', file: 'song6.mp4'},
+            {title: 'Rossa - Pudar', file: 'song7.mp4'},
+            {title: 'Bernadya  - Satu Bulan', file: 'song8.mp4'}, 
+            {title: 'Fabio Asher - Rumah Singgah', file: 'song9.mp4'},
+            {title: 'NDX AKA - Nemen', file: 'song10.mp4'},
+            {title: 'Rizwan Fadilah - Tanpa Bicara', file: 'song11.mp4'},
+            {title: 'Meiska - Hilang Tanpa Bilang', file: 'song12.mp4'},
+            {title: 'Blackpink - Boombayah', file: 'song13.mp4'},
+            {title: 'Mahalini - Sial', file: 'song14.mp4'},
+            {title: 'Tiara Andini - Kupu - Kupu', file: 'song15.mp4'},
+            {title: 'Tiara Andini - Pernikahan Kita', file: 'song16.mp4'}
+        ];
+
+        let currentSongIndex = 0;
+        const videoPlayer = document.getElementById('videoPlayer');
+
+        function playSong(index) {
+            currentSongIndex = index;
+            videoPlayer.src = songList[index].file;
+            videoPlayer.play();
+        }
+
+        function nextSong() {
+            currentSongIndex = (currentSongIndex + 1) % songList.length;
+            playSong(currentSongIndex);
+        }
+
+        function prevSong() {
+            currentSongIndex = (currentSongIndex - 1 + songList.length) % songList.length;
+            playSong(currentSongIndex);
+        }
+
+        function searchSongs() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const ul = document.getElementById('songList');
+            const li = ul.getElementsByTagName('li');
+
+            for (let i = 0; i < li.length; i++) {
+                const song = li[i].textContent || li[i].innerText;
+                if (song.toLowerCase().indexOf(input) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
