@@ -63,20 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             metrics: "SAW Method & Rule-Based System | SQLite Database"
         },
-        p2: {
-            title: "Smart Doorlock System",
-            category: "IoT & Hardware System",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects",
-            techStack: ["ESP32 Microcontroller", "C++ / Arduino IDE", "Solenoid Door Lock", "RFID Sensor", "Web Dashboard"],
-            description: "Sistem kunci pintu pintar terintegrasi IoT yang memungkinkan penguncian dan pembukaan pintu secara nirkabel melalui web dashboard serta akses kartu RFID. Dilengkapi sensor keamanan otomatis yang mengirimkan sinyal peringatan jika ada gangguan fisik.",
-            features: [
-                "Kendali kunci pintu real-time via Web Browser (WiFi Local).",
-                "Autentikasi ganda via RFID Tag & PIN Digital.",
-                "Log riwayat akses pembukaan pintu otomatis.",
-                "Sistem cadangan daya saat mati listrik."
-            ],
-            metrics: "Response Time < 500ms | ESP32 WiFi Enabled"
-        },
         p3: {
             title: "Aplikasi Pemesanan Tiket Mobile",
             category: "Mobile Application",
