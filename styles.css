@@ -1093,30 +1093,31 @@ h1, h2, h3, h4 {
     color: #34d399;
 }
 
-/* Art 6: E-Commerce */
-.art-shop {
+/* Art 6: Web Administrasi Desa Legok */
+.art-desa {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
-.shop-card-mini {
-    padding: 10px 20px;
-    background: rgba(255, 0, 127, 0.15);
-    border: 1px solid var(--neon-magenta);
-    border-radius: 8px;
+.desa-icon {
+    font-size: 2.8rem;
+    color: #10B981;
+    filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.6));
+}
+.bot-badge-mini {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid #10B981;
+    border-radius: 20px;
     color: #ffffff;
-    font-size: 0.85rem;
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-.cart-pill {
-    font-size: 0.75rem;
-    color: var(--neon-cyan);
-    background: rgba(0, 243, 255, 0.1);
-    padding: 4px 12px;
-    border-radius: 15px;
+    gap: 6px;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
 }
 
 /* Card Body */

@@ -45,8 +45,10 @@ body {
     padding: 20px;
     background-color: #706d6d;
     border-right: 2px solid #7a7070;
-    max-height: 80vh; /* Atur batas tinggi untuk daftar lagu */
-    overflow-y: auto; /* Tambahkan scroll jika melebihi tinggi */
+    max-height: 80vh;
+    /* Atur batas tinggi untuk daftar lagu */
+    overflow-y: auto;
+    /* Tambahkan scroll jika melebihi tinggi */
 }
 
 .song-list h2 {
@@ -69,7 +71,7 @@ body {
     border: 2px solid gray;
     border-radius: 4px;
     outline: none;
-    
+
 }
 
 .search-bar input[type="text"]:focus {
@@ -80,9 +82,10 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.song-list li a{
+
+.song-list li a {
     color: whitesmoke;
     text-decoration: none;
 }

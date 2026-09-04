@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p5: {
             title: "Game 2D (FlyHero)",
             category: "Game Development · 2D Game",
-            githubUrl: "https://github.com/da133450-ux/flyhero-2d-game",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/game-fly-hero",
             techStack: ["Godot Engine", "GDScript", "2D Physics", "Collision Detection"],
             description: "Mengembangkan game arcade 2D bertema penerbangan menggunakan Godot Engine. Game memiliki mekanisme pergerakan karakter, deteksi tabrakan, sistem skor, serta physics objek untuk menciptakan gameplay yang interaktif dan responsif.",
             features: [
@@ -92,18 +92,18 @@ document.addEventListener('DOMContentLoaded', () => {
             metrics: "Web Audio Latency < 20ms | Synchronized Lyrics API"
         },
         p6: {
-            title: "Web E-Commerce Sederhana",
-            category: "Web Application",
-            githubUrl: "https://github.com/da133450-ux/ecommerce-web",
-            techStack: ["HTML5", "CSS3 Grid/Flexbox", "JavaScript", "LocalStorage API"],
-            description: "Website toko online responsif yang menyediakan pengalaman belanja intuitif. Dilengkapi fitur filter kategori produk, kalkulasi total belanja otomatis, dan penyimpanan keranjang belanja.",
+            title: "Web Administrasi Desa Legok",
+            category: "Web Application · Digital Public Services",
+            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-administrasi-desa",
+            techStack: ["React", "Vite", "n8n Workflow (AI Chatbot)", "Supabase Backend DB", "CSS3 / Tailwind"],
+            description: "Platform portal pelayanan digital dan administrasi terpadu untuk Desa Legok, Tangerang. Aplikasi memfasilitasi pelayanan mandiri warga (pengajuan surat online SKTM/Domisili, lapor pengaduan aspirasi warga), kabar publikasi desa terbaru, serta integrasi floating AI Chatbot otomatis berbasis n8n workflow dan backend Supabase.",
             features: [
-                "Katalog produk dinamis dengan filter cepat.",
-                "Manajemen keranjang belanja (Tambah, Kurang, Hapus).",
-                "Fitur Checkout simulasi dengan ringkasan pembayaran.",
-                "Layout seratus persen responsif untuk Mobile, Tablet & PC."
+                "Layanan Mandiri Digital: Pengajuan Surat Online (SKTM, Surat Domisili, Surat Pengantar) & Form Lapor Pengaduan Warga.",
+                "Floating AI Chatbot (n8n Workflow): Layanan konsultasi & tanya jawab otomatis 24 jam mengenai prosedur administrasi desa.",
+                "Backend Supabase: Pengelolaan data pemohon, status persetujuan surat, serta database laporan pengaduan secara real-time.",
+                "Portal Informasi Desa: Publikasi Berita Desa terbaru, transparansi anggaran, kontak WhatsApp Admin & jam operasional kantor."
             ],
-            metrics: "100% Responsive Layout | Zero External Framework"
+            metrics: "n8n AI Workflow | Supabase Backend DB | React Vite"
         }
     };
 
