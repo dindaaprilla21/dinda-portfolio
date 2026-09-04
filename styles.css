@@ -718,8 +718,8 @@ h1, h2, h3, h4 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .project-card {
@@ -727,6 +727,28 @@ h1, h2, h3, h4 {
     flex-direction: column;
     overflow: hidden;
     height: 100%;
+}
+
+.project-card.featured-project {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--neon-magenta);
+    box-shadow: 0 0 25px rgba(255, 0, 127, 0.25);
+    background: rgba(15, 23, 42, 0.75);
+}
+
+.project-card.featured-project .card-visual {
+    width: 38%;
+    height: 100%;
+    min-height: 250px;
+    border-bottom: none;
+    border-right: 1px solid var(--glass-border);
+}
+
+.project-card.featured-project .card-body {
+    width: 62%;
+    padding: 28px 30px;
 }
 
 .card-visual {
@@ -762,11 +784,6 @@ h1, h2, h3, h4 {
 .badge-godot {
     border-color: #478CBF;
     color: #478CBF;
-}
-
-.featured-project {
-    border: 1px solid var(--neon-magenta);
-    box-shadow: 0 0 25px rgba(255, 0, 127, 0.25);
 }
 
 /* Artwork Visualizers */
@@ -1578,6 +1595,25 @@ h1, h2, h3, h4 {
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card.featured-project {
+        grid-column: span 2;
+        flex-direction: column;
+    }
+
+    .project-card.featured-project .card-visual,
+    .project-card.featured-project .card-body {
+        width: 100%;
+    }
+
+    .project-card.featured-project .card-visual {
+        border-right: none;
+        border-bottom: 1px solid var(--glass-border);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1608,6 +1644,10 @@ h1, h2, h3, h4 {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card.featured-project {
+        grid-column: span 1;
     }
 
     .profile-photo-card {
