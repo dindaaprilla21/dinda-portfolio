@@ -35,6 +35,7 @@
                 <a href="#hero" class="nav-link active" id="nav-hero-link"><i class="fa-solid fa-house"></i> Beranda</a>
                 <a href="#about" class="nav-link" id="nav-about-link"><i class="fa-solid fa-user"></i> Tentang</a>
                 <a href="#skills" class="nav-link" id="nav-skills-link"><i class="fa-solid fa-code"></i> Keahlian</a>
+                <a href="#github" class="nav-link" id="nav-github-link"><i class="fa-brands fa-github"></i> GitHub</a>
                 <a href="#projects" class="nav-link" id="nav-projects-link"><i class="fa-solid fa-laptop-code"></i>
                     Proyek</a>
                 <a href="#contact" class="nav-link" id="nav-contact-link"><i class="fa-solid fa-paper-plane"></i>
@@ -291,6 +292,105 @@
             </div>
         </section>
 
+        <!-- GitHub Section -->
+        <section id="github" class="github-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">&lt;github-profile&gt;</span>
+                    <h2 class="section-title">GitHub Activity</h2>
+                    <p class="section-subtitle">Statistik & aktivitas coding langsung dari profil GitHub saya</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- GitHub Profile Banner -->
+                <a href="https://github.com/da133450-ux" target="_blank" class="github-profile-banner glass-panel" id="github-profile-banner">
+                    <div class="gpb-left">
+                        <div class="gpb-avatar-wrap">
+                            <img src="https://avatars.githubusercontent.com/u/324610620?v=4" alt="GitHub Avatar da133450-ux" class="gpb-avatar" id="gh-avatar">
+                            <div class="gpb-avatar-ring"></div>
+                        </div>
+                        <div class="gpb-info">
+                            <span class="gpb-name">Dinda Aprilla Dalimunthe</span>
+                            <span class="gpb-username"><i class="fa-brands fa-github"></i> da133450-ux</span>
+                            <span class="gpb-bio">Fresh Graduate · Software Developer · Data Scientist 🇮🇩</span>
+                        </div>
+                    </div>
+                    <div class="gpb-right">
+                        <div class="gpb-stat">
+                            <span class="gpb-stat-num" id="gh-repos">—</span>
+                            <span class="gpb-stat-label">Repositories</span>
+                        </div>
+                        <div class="gpb-stat">
+                            <span class="gpb-stat-num" id="gh-followers">—</span>
+                            <span class="gpb-stat-label">Followers</span>
+                        </div>
+                        <div class="gpb-stat">
+                            <span class="gpb-stat-num" id="gh-following">—</span>
+                            <span class="gpb-stat-label">Following</span>
+                        </div>
+                        <span class="gpb-cta"><i class="fa-brands fa-github"></i> Buka Profil</span>
+                    </div>
+                </a>
+
+                <!-- GitHub Stats Cards -->
+                <div class="github-stats-grid">
+                    <div class="gh-stat-card glass-panel">
+                        <h4 class="gh-card-title"><i class="fa-solid fa-chart-bar"></i> GitHub Statistics</h4>
+                        <img
+                            src="https://github-readme-stats.vercel.app/api?username=da133450-ux&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=06B6D4&text_color=C9D1D9"
+                            alt="GitHub Stats"
+                            class="gh-stats-img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="gh-stat-card glass-panel">
+                        <h4 class="gh-card-title"><i class="fa-solid fa-code"></i> Most Used Languages</h4>
+                        <img
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=da133450-ux&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=C9D1D9&langs_count=8"
+                            alt="Top Languages"
+                            class="gh-stats-img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="gh-stat-card gh-streak-card glass-panel">
+                        <h4 class="gh-card-title"><i class="fa-solid fa-fire"></i> Coding Streak</h4>
+                        <img
+                            src="https://streak-stats.demolab.com?user=da133450-ux&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=A855F7&fire=06B6D4&currStreakLabel=A855F7&sideNums=C9D1D9&sideLabels=C9D1D9"
+                            alt="GitHub Streak"
+                            class="gh-stats-img"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+
+                <!-- Contribution Heatmap -->
+                <div class="gh-contribution-wrap glass-panel">
+                    <div class="gh-contrib-header">
+                        <h4><i class="fa-solid fa-calendar-days"></i> Contribution Graph</h4>
+                        <a href="https://github.com/da133450-ux" target="_blank" class="gh-contrib-link">
+                            Lihat di GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <img
+                        src="https://ghchart.rshah.org/A855F7/da133450-ux"
+                        alt="GitHub Contribution Chart"
+                        class="gh-contrib-chart"
+                        loading="lazy"
+                    />
+                </div>
+
+                <!-- CTA to GitHub -->
+                <div class="gh-cta-row">
+                    <a href="https://github.com/da133450-ux" target="_blank" class="btn btn-neon" id="github-view-all-btn">
+                        <i class="fa-brands fa-github"></i> Lihat Semua Repository di GitHub
+                    </a>
+                    <a href="https://github.com/da133450-ux/dinda-portfolio" target="_blank" class="btn btn-outline" id="github-portfolio-repo-btn">
+                        <i class="fa-solid fa-code-branch"></i> Source Code Portofolio Ini
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
@@ -355,9 +455,14 @@
                             <div class="project-metric-badge">
                                 <i class="fa-solid fa-brain"></i> Metode: <strong>SAW & Rule-Based System</strong>
                             </div>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p1">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p1">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/reminder-ai" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -388,9 +493,14 @@
                             <div class="project-metric-badge">
                                 <i class="fa-solid fa-robot"></i> Integrasi: <strong>n8n AI Chatbot & Supabase DB</strong>
                             </div>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p6">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p6">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-administrasi-desa" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -423,9 +533,14 @@
                             <div class="project-metric-badge">
                                 <i class="fa-solid fa-gamepad"></i> Engine: <strong>Godot Engine</strong>
                             </div>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p5">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p5">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/game-fly-hero" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -455,9 +570,14 @@
                                 Platform karaoke interaktif di web dengan sinkronisasi lirik otomatis real-time, kontrol
                                 pitch audio, serta visualizer spektrum nada suara.
                             </p>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p4">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p4">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-karaoke" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -485,9 +605,14 @@
                                 Aplikasi pemesanan tiket acara & transportasi berbasis mobile dengan fitur pemetaan
                                 kursi interaktif, e-ticket QR Code, dan manajemen pesanan.
                             </p>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p3">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p3">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/pemesanan-tiket" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -534,9 +659,14 @@
                             <div class="project-metric-badge">
                                 <i class="fa-solid fa-trophy"></i> <strong>96.95%</strong> Test Accuracy
                             </div>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p7">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p7">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/mental-health-classification" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -577,9 +707,14 @@
                                 <i class="fa-solid fa-bullseye"></i> <strong>92.23%</strong> India ·
                                 <strong>98.70%</strong> Korea
                             </div>
-                            <button class="btn btn-card-detail open-modal-btn" data-project="p8">
-                                <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                            <div class="card-actions">
+                                <button class="btn btn-card-detail open-modal-btn" data-project="p8">
+                                    <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/da133450-ux/food-image-classification" target="_blank" class="btn btn-github-card">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
                         </div>
                     </article>
 

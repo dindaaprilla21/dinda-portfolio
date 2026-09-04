@@ -310,4 +310,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1200);
         });
     }
+
+    // ----------------------------------------------------------------------
+    // 6. GITHUB API - LIVE STATS (da133450-ux)
+    // ----------------------------------------------------------------------
+    (async () => {
+        try {
+            const res = await fetch('https://api.github.com/users/da133450-ux');
+            if (res.ok) {
+                const data = await res.json();
+                const reposEl = document.getElementById('gh-repos');
+                const followersEl = document.getElementById('gh-followers');
+                const followingEl = document.getElementById('gh-following');
+                if (reposEl && data.public_repos !== undefined) reposEl.textContent = data.public_repos;
+                if (followersEl && data.followers !== undefined) followersEl.textContent = data.followers;
+                if (followingEl && data.following !== undefined) followingEl.textContent = data.following;
+            }
+        } catch (e) {
+            // Silently fallback to static defaults
+        }
+    })();
 });
