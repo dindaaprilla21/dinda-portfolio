@@ -1,6 +1,6 @@
 # =====================================================================
-# SETUP GITHUB PROFILE README - da133450-ux
-# Script ini akan membuat repo 'da133450-ux' dan upload Profile README
+# SETUP GITHUB PROFILE README - dindaaprilla21
+# Script ini akan membuat repo 'dindaaprilla21' dan upload Profile README
 # =====================================================================
 
 param(
@@ -19,8 +19,8 @@ if (-not $GitHubToken) {
     }
 }
 
-$Username = "da133450-ux"
-$RepoName = "da133450-ux"
+$Username = "dindaaprilla21"
+$RepoName = "dindaaprilla21"
 $Headers = @{
     "Authorization"        = "Bearer $GitHubToken"
     "Accept"               = "application/vnd.github+json"
@@ -120,6 +120,6 @@ Write-Host "`n" -NoNewline
 Write-Host ("=" * 60) -ForegroundColor DarkGray
 Write-Host "SELESAI! Profil GitHub kamu sudah terhubung dan aktif!" -ForegroundColor Green
 Write-Host ""
-Write-Host "Cek langsung di: https://github.com/da133450-ux" -ForegroundColor Cyan
+Write-Host "Cek langsung di: https://github.com/dindaaprilla21" -ForegroundColor Cyan
 Write-Host "Halaman Overview GitHub kamu sekarang menampilkan semua proyek dan link portofolio!" -ForegroundColor Green
 Write-Host ("=" * 60) -ForegroundColor DarkGray

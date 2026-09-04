@@ -6,7 +6,7 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-da133450--ux.github.io-A855F7?style=for-the-badge&logoColor=white)](https://da133450-ux.github.io/dinda-portfolio)
+[![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-da133450--ux.github.io-A855F7?style=for-the-badge&logoColor=white)](https://dindaaprilla21.github.io/dinda-portfolio)
 [![Email](https://img.shields.io/badge/📧_EMAIL-da133450@gmail.com-06B6D4?style=for-the-badge&logoColor=white)](mailto:da133450@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
 
@@ -78,13 +78,13 @@ class DindaAprillaDalimunthe:
 
 | 🏆 Proyek | 📋 Deskripsi | 🔧 Teknologi |
 |:---:|:---:|:---:|
-| [🤖 Reminder AI](https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/reminder-ai) | Aplikasi mobile pintar manajemen tugas mahasiswa dengan metode SAW & Rule-Based System | Flutter · Dart · SQLite |
-| [🌐 Web Administrasi Desa](https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-administrasi-desa) | Portal digital pelayanan desa dengan AI Chatbot (n8n + Supabase) | React · Vite · Supabase · n8n |
-| [🎮 Game 2D FlyHero](https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/game-fly-hero) | Game arcade 2D penerbangan dengan physics engine dan sistem skor | Godot Engine · GDScript |
-| [🎤 Web Karaoke](https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-karaoke) | Aplikasi karaoke interaktif browser dengan Web Audio API & sinkronisasi lirik | HTML5 · CSS3 · JavaScript |
-| [🎫 Pemesanan Tiket](https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/pemesanan-tiket) | Platform mobile pemesanan tiket dengan E-Ticket QR Code | Flutter · Dart · QR Generator |
-| [🧠 Mental Health ML](https://github.com/da133450-ux/mental-health-classification) | Klasifikasi prediksi layanan kesehatan mental (96.95% accuracy) | Python · CatBoost · SHAP · SMOTE |
-| [🍛 Food Classification](https://github.com/da133450-ux/food-image-classification) | Klasifikasi citra makanan India & Korea dengan transfer learning | Python · TensorFlow · EfficientNetB3 |
+| [🤖 Reminder AI](https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/reminder-ai) | Aplikasi mobile pintar manajemen tugas mahasiswa dengan metode SAW & Rule-Based System | Flutter · Dart · SQLite |
+| [🌐 Web Administrasi Desa](https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-administrasi-desa) | Portal digital pelayanan desa dengan AI Chatbot (n8n + Supabase) | React · Vite · Supabase · n8n |
+| [🎮 Game 2D FlyHero](https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/game-fly-hero) | Game arcade 2D penerbangan dengan physics engine dan sistem skor | Godot Engine · GDScript |
+| [🎤 Web Karaoke](https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-karaoke) | Aplikasi karaoke interaktif browser dengan Web Audio API & sinkronisasi lirik | HTML5 · CSS3 · JavaScript |
+| [🎫 Pemesanan Tiket](https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/pemesanan-tiket) | Platform mobile pemesanan tiket dengan E-Ticket QR Code | Flutter · Dart · QR Generator |
+| [🧠 Mental Health ML](https://github.com/dindaaprilla21/mental-health-classification) | Klasifikasi prediksi layanan kesehatan mental (96.95% accuracy) | Python · CatBoost · SHAP · SMOTE |
+| [🍛 Food Classification](https://github.com/dindaaprilla21/food-image-classification) | Klasifikasi citra makanan India & Korea dengan transfer learning | Python · TensorFlow · EfficientNetB3 |
 
 </div>
 
@@ -94,14 +94,14 @@ class DindaAprillaDalimunthe:
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=da133450-ux&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=06B6D4&text_color=C9D1D9"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=da133450-ux&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=C9D1D9"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=dindaaprilla21&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=06B6D4&text_color=C9D1D9"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dindaaprilla21&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=C9D1D9"/>
 
 </div>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=da133450-ux&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=A855F7&fire=06B6D4&currStreakLabel=A855F7)](https://github.com/da133450-ux)
+[![GitHub Streak](https://streak-stats.demolab.com?user=dindaaprilla21&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=A855F7&fire=06B6D4&currStreakLabel=A855F7)](https://github.com/dindaaprilla21)
 
 </div>
 
@@ -146,12 +146,12 @@ class DindaAprillaDalimunthe:
 
 ### 🌐 Kunjungi Portfolio Lengkap Saya!
 
-[![Visit Portfolio](https://img.shields.io/badge/🚀_Lihat_Portfolio_Lengkap-A855F7?style=for-the-badge&logoColor=white)](https://da133450-ux.github.io/dinda-portfolio)
+[![Visit Portfolio](https://img.shields.io/badge/🚀_Lihat_Portfolio_Lengkap-A855F7?style=for-the-badge&logoColor=white)](https://dindaaprilla21.github.io/dinda-portfolio)
 
 ---
 
 *"Turning academic challenges into impactful digital solutions"* ✨
 
-![Profile Views](https://komarev.com/ghpvc/?username=da133450-ux&color=A855F7&style=flat-square&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=dindaaprilla21&color=A855F7&style=flat-square&label=Profile+Views)
 
 </div>

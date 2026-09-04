@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p8: {
             title: "Indian & Korean Food Classification",
             category: "Deep Learning · Computer Vision",
-            githubUrl: "https://github.com/da133450-ux/food-image-classification",
+            githubUrl: "https://github.com/dindaaprilla21/food-image-classification",
             techStack: ["Python", "TensorFlow", "Keras", "EfficientNetB3", "Transfer Learning", "Image Augmentation"],
             description: "Mengembangkan sistem klasifikasi citra makanan India dan Korea menggunakan transfer learning EfficientNetB3. Dataset diproses melalui image resizing, normalization, augmentation, dan evaluasi menggunakan berbagai metrik klasifikasi.",
             features: [
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p7: {
             title: "Mental Health Classification",
             category: "Data Science · Machine Learning",
-            githubUrl: "https://github.com/da133450-ux/mental-health-classification",
+            githubUrl: "https://github.com/dindaaprilla21/mental-health-classification",
             techStack: ["Python", "CatBoost", "Scikit-learn", "SMOTE", "SHAP"],
             description: "Membangun model klasifikasi untuk memprediksi pilihan layanan kesehatan mental berdasarkan karakteristik demografis, perilaku, dan psikologis. Proyek mencakup data preprocessing komprehensif, penanganan class imbalance menggunakan SMOTE, hyperparameter tuning, serta interpretasi model menggunakan SHAP.",
             features: [
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p5: {
             title: "Game 2D (FlyHero)",
             category: "Game Development · 2D Game",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/game-fly-hero",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/game-fly-hero",
             techStack: ["Godot Engine", "GDScript", "2D Physics", "Collision Detection"],
             description: "Mengembangkan game arcade 2D bertema penerbangan menggunakan Godot Engine. Game memiliki mekanisme pergerakan karakter, deteksi tabrakan, sistem skor, serta physics objek untuk menciptakan gameplay yang interaktif dan responsif.",
             features: [
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p1: {
             title: "Reminder AI",
             category: "Mobile Application",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/reminder-ai",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/reminder-ai",
             techStack: ["Flutter", "Dart", "SQLite", "SAW Method", "Rule-Based System", "Android"],
             description: "Mengembangkan aplikasi mobile Reminder AI berbasis Android untuk membantu mahasiswa mengelola tugas dan deadline secara lebih terstruktur. Aplikasi menggunakan metode SAW untuk menentukan prioritas tugas dan Rule-Based System untuk memberikan rekomendasi jadwal belajar. Dilengkapi dengan notifikasi deadline, pengingat harian, kalender, serta mode terang dan gelap.",
             features: [
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p3: {
             title: "Aplikasi Pemesanan Tiket Mobile",
             category: "Mobile Application",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/pemesanan-tiket",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/pemesanan-tiket",
             techStack: ["Flutter", "Dart", "Provider State Management", "Shared Preferences", "QR Code Generator"],
             description: "Platform pemesanan tiket acara dan perjalanan berbasis mobile. Menyediakan pengalaman pengguna yang mulus dalam memilih tanggal, tempat duduk, hingga penerbitan E-Ticket berwujud QR Code untuk verifikasi langsung.",
             features: [
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p4: {
             title: "Aplikasi Karaoke Berbasis Web",
             category: "Web Application",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-karaoke",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-karaoke",
             techStack: ["HTML5", "CSS3", "JavaScript", "Web Audio API", "HTML5 Audio Sync"],
             description: "Aplikasi hiburan karaoke interaktif berbasis peramban web tanpa memerlukan plugin tambahan. Memanfaatkan Web Audio API untuk pemrosesan sinyal audio real-time dan pencocokan lirik lagu yang presisi.",
             features: [
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p6: {
             title: "Web Administrasi Desa Legok",
             category: "Web Application · Digital Public Services",
-            githubUrl: "https://github.com/da133450-ux/dinda-portfolio/tree/main/projects/web-administrasi-desa",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-administrasi-desa",
             techStack: ["React", "Vite", "n8n Workflow (AI Chatbot)", "Supabase Backend DB", "CSS3 / Tailwind"],
             description: "Platform portal pelayanan digital dan administrasi terpadu untuk Desa Legok, Tangerang. Aplikasi memfasilitasi pelayanan mandiri warga (pengajuan surat online SKTM/Domisili, lapor pengaduan aspirasi warga), kabar publikasi desa terbaru, serta integrasi floating AI Chatbot otomatis berbasis n8n workflow dan backend Supabase.",
             features: [
@@ -312,11 +312,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------------------------
-    // 6. GITHUB API - LIVE STATS (da133450-ux)
+    // 6. GITHUB API - LIVE STATS (dindaaprilla21)
     // ----------------------------------------------------------------------
     (async () => {
         try {
-            const res = await fetch('https://api.github.com/users/da133450-ux');
+            const res = await fetch('https://api.github.com/users/dindaaprilla21');
             if (res.ok) {
                 const data = await res.json();
                 const reposEl = document.getElementById('gh-repos');
