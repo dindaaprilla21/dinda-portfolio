@@ -272,6 +272,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------------------------
+    // 4.1 CV / RESUME MODAL HANDLER
+    // ----------------------------------------------------------------------
+    const cvModal = document.getElementById('cv-modal');
+    const cvModalClose = document.getElementById('cv-modal-close');
+    const cvPrintBtn = document.getElementById('cv-print-btn');
+
+    const openCvModal = () => {
+        if (!cvModal) return;
+        cvModal.classList.add('active');
+        cvModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeCvModal = () => {
+        if (!cvModal) return;
+        cvModal.classList.remove('active');
+        cvModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+    };
+
+    document.addEventListener('click', (e) => {
+        const cvTrigger = e.target.closest('.open-cv-modal-btn');
+        if (cvTrigger) {
+            e.preventDefault();
+            openCvModal();
+        }
+    });
+
+    if (cvModalClose) cvModalClose.addEventListener('click', closeCvModal);
+
+    if (cvModal) {
+        cvModal.addEventListener('click', (e) => {
+            if (e.target === cvModal) closeCvModal();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && cvModal && cvModal.classList.contains('active')) {
+            closeCvModal();
+        }
+    });
+
+    if (cvPrintBtn) {
+        cvPrintBtn.addEventListener('click', () => {
+            window.print();
+        });
+    }
+
+    // ----------------------------------------------------------------------
     // 5. CONTACT FORM & TOAST NOTIFICATION
     // ----------------------------------------------------------------------
     const contactForm = document.getElementById('contact-form');
@@ -302,12 +351,28 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Kirim Pesan Ke da133450@gmail.com';
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Kirim Pesan';
                 submitBtn.disabled = false;
                 contactForm.reset();
 
-                showToast(`Terima kasih ${name}! Pesan Anda berhasil terkirim ke da133450@gmail.com.`);
+                showToast(`Terima kasih ${name}! Pesan Anda berhasil terkirim.`);
             }, 1200);
+        });
+    }
+
+    // Copy Email to Clipboard Feature
+    const copyEmailBtn = document.getElementById('copy-email-btn');
+    if (copyEmailBtn) {
+        copyEmailBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText('da133450@gmail.com').then(() => {
+                showToast('Email da133450@gmail.com berhasil disalin!');
+                copyEmailBtn.innerHTML = '<i class="fa-solid fa-check" style="color: #4ade80;"></i>';
+                setTimeout(() => {
+                    copyEmailBtn.innerHTML = '<i class="fa-regular fa-clone"></i>';
+                }, 2000);
+            }).catch(() => {
+                showToast('Email: da133450@gmail.com');
+            });
         });
     }
 

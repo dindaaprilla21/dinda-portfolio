@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Dinda Aprilla Dalimunthe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #ff007f;
+            --accent-cyan: #0088cc;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-dark);
+            background-color: #e2e8f0;
+            line-height: 1.55;
+            padding: 30px 15px;
+        }
+
+        .cv-page-container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            border: 1px solid #cbd5e1;
+        }
+
+        /* Top Action Bar for screen view */
+        .cv-topbar {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 14px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cv-topbar-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #94a3b8;
+        }
+
+        .cv-topbar-title strong {
+            color: #38bdf8;
+        }
+
+        .cv-topbar-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .btn-print {
+            background: #ff007f;
+            color: #ffffff;
+        }
+
+        .btn-print:hover {
+            background: #e60072;
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* CV Sheet */
+        .cv-content {
+            padding: 40px 45px;
+        }
+
+        .cv-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        .cv-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .cv-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #0284c7;
+            margin-top: 6px;
+            margin-bottom: 14px;
+        }
+
+        .cv-contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px 20px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .cv-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cv-contact-item a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .cv-contact-item a:hover {
+            color: #0284c7;
+            text-decoration: underline;
+        }
+
+        .cv-section {
+            margin-bottom: 24px;
+        }
+
+        .cv-section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1.5px solid #0284c7;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+        }
+
+        .cv-section-title i {
+            color: #0284c7;
+            font-size: 1rem;
+        }
+
+        .cv-desc {
+            font-size: 0.92rem;
+            color: #334155;
+            line-height: 1.65;
+            text-align: justify;
+        }
+
+        .cv-item {
+            margin-bottom: 16px;
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 4px;
+        }
+
+        .cv-item-role {
+            font-weight: 700;
+            font-size: 0.98rem;
+            color: #0f172a;
+        }
+
+        .cv-item-institution {
+            color: #0284c7;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+
+        .cv-item-date {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #64748b;
+            background: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        .cv-item ul {
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        .cv-item li {
+            font-size: 0.88rem;
+            color: #334155;
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+
+        /* Skills Grid */
+        .cv-skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 18px;
+        }
+
+        .cv-skill-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px 14px;
+        }
+
+        .cv-skill-card h4 {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .cv-skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .cv-pill {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .cv-footer-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 30px;
+            padding-top: 14px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Print Specific Styling */
+        @media print {
+            body {
+                background: #ffffff;
+                padding: 0;
+            }
+            .cv-topbar {
+                display: none !important;
+            }
+            .cv-page-container {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+                margin: 0;
+            }
+            .cv-content {
+                padding: 20px 24px;
+            }
+            .cv-name {
+                font-size: 1.9rem;
+            }
+            .cv-section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .cv-content {
+                padding: 24px 18px;
+            }
+            .cv-skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .cv-item-header {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-page-container">
+        <!-- Top Action Bar -->
+        <div class="cv-topbar">
+            <div class="cv-topbar-title">
+                <i class="fa-solid fa-file-invoice"></i> <strong>Curriculum Vitae Resmi</strong> &middot; Dinda Aprilla Dalimunthe
+            </div>
+            <div class="cv-topbar-actions">
+                <button type="button" class="btn-action btn-print" onclick="window.print()">
+                    <i class="fa-solid fa-print"></i> Cetak / Simpan PDF
+                </button>
+                <a href="../index.html" class="btn-action btn-back">
+                    <i class="fa-solid fa-arrow-left"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+
+        <!-- Printable Document Body -->
+        <div class="cv-content">
+            <!-- Header -->
+            <header class="cv-header">
+                <h1 class="cv-name">DINDA APRILLA DALIMUNTHE</h1>
+                <p class="cv-title">Fresh Graduate S1 Teknik Informatika &middot; Software Developer & Machine Learning Enthusiast</p>
+                <div class="cv-contacts">
+                    <div class="cv-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:da133450@gmail.com">da133450@gmail.com</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Indonesia (WIB / UTC+7)</span>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/dindaaprilla21" target="_blank">github.com/dindaaprilla21</a>
+                    </div>
+                    <div class="cv-contact-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>IPK: 3.8+ / 4.00</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Profil Singkat -->
+            <section class="cv-section">
+                <h2 class="cv-section-title"><i class="fa-solid fa-user"></i> Ringkasan Profil</h2>
+                <p class="cv-desc">
+                    Lulusan Sarjana (S1) Teknik Informatika dengan prestasi akademik memuaskan (IPK 3.8+) yang berfokus pada <strong>Machine Learning & Deep Learning (Computer Vision)</strong>, <strong>Game Development 2D (Godot Engine)</strong>, dan <strong>Mobile Application Development (Flutter)</strong>. Memiliki pengalaman solid dalam melatih model klasifikasi citra transfer learning dengan akurasi 98%+, pra-pemrosesan data tabular berskala besar (SMOTE, CatBoost, SHAP), serta rekayasa arsitektur kode yang bersih, modular, dan terdokumentasi rapi. Siap berkontribusi secara dinamis untuk posisi Software Engineer, Data Scientist, atau ML Engineer.
+                </p>
+            </section>
+
+            <!-- Pendidikan -->
+            <section class="cv-section">
+                <h2 class="cv-section-title"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <div class="cv-item-role">Sarjana Komputer (S.Kom) - Teknik Informatika</div>
+                            <div class="cv-item-institution">Perguruan Tinggi Indonesia &middot; Akreditasi Baik Sekali</div>
+                        </div>
+                        <div class="cv-item-date">Fresh Graduate &middot; IPK 3.8+</div>
+                    </div>
+                    <ul>
+                        <li>Fokus Akademik: Kecerdasan Buatan (AI), Computer Vision, Rekayasa Perangkat Lunak, dan Pemrograman Mobile.</li>
+                        <li>Skripsi / Proyek Akhir: Implementasi Pemodelan Klasifikasi Deep Learning Menggunakan Arsitektur Transfer Learning.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Keahlian Teknis -->
+            <section class="cv-section">
+                <h2 class="cv-section-title"><i class="fa-solid fa-gears"></i> Keahlian Teknis</h2>
+                <div class="cv-skills-grid">
+                    <div class="cv-skill-card">
+                        <h4>Bahasa Pemrograman</h4>
+                        <div class="cv-skill-pills">
+                            <span class="cv-pill">Python</span>
+                            <span class="cv-pill">Dart</span>
+                            <span class="cv-pill">GDScript</span>
+                            <span class="cv-pill">C++</span>
+                            <span class="cv-pill">JavaScript</span>
+                            <span class="cv-pill">SQL</span>
+                        </div>
+                    </div>
+                    <div class="cv-skill-card">
+                        <h4>Data Science & AI</h4>
+                        <div class="cv-skill-pills">
+                            <span class="cv-pill">TensorFlow / Keras</span>
+                            <span class="cv-pill">EfficientNetB3</span>
+                            <span class="cv-pill">Transfer Learning</span>
+                            <span class="cv-pill">CatBoost</span>
+                            <span class="cv-pill">SMOTE</span>
+                            <span class="cv-pill">SHAP</span>
+                        </div>
+                    </div>
+                    <div class="cv-skill-card">
+                        <h4>Frameworks & Game Engine</h4>
+                        <div class="cv-skill-pills">
+                            <span class="cv-pill">Flutter (Mobile)</span>
+                            <span class="cv-pill">Godot Engine (2D)</span>
+                            <span class="cv-pill">Git / GitHub</span>
+                            <span class="cv-pill">VS Code</span>
+                            <span class="cv-pill">Google Colab</span>
+                        </div>
+                    </div>
+                    <div class="cv-skill-card">
+                        <h4>Database & Infrastruktur</h4>
+                        <div class="cv-skill-pills">
+                            <span class="cv-pill">PostgreSQL</span>
+                            <span class="cv-pill">MySQL</span>
+                            <span class="cv-pill">REST API</span>
+                            <span class="cv-pill">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Proyek Akademik Unggulan -->
+            <section class="cv-section">
+                <h2 class="cv-section-title"><i class="fa-solid fa-laptop-code"></i> Proyek Akademik & Portofolio</h2>
+                
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <div class="cv-item-role">Indian & Korean Food Classification (Deep Learning)</div>
+                            <div class="cv-item-institution">Python, TensorFlow, EfficientNetB3, Transfer Learning</div>
+                        </div>
+                        <div class="cv-item-date">Akurasi 98.70%</div>
+                    </div>
+                    <ul>
+                        <li>Mengembangkan sistem klasifikasi citra makanan menggunakan transfer learning EfficientNetB3 dengan augmentasi data canggih.</li>
+                        <li>Mencapai performa akurasi 92.23% pada dataset makanan India dan 98.70% pada dataset makanan Korea.</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <div class="cv-item-role">2D Physics Adventure Game Development</div>
+                            <div class="cv-item-institution">Godot Engine, GDScript, Tilemaps, 2D Collision Physics</div>
+                        </div>
+                        <div class="cv-item-date">Game Project</div>
+                    </div>
+                    <ul>
+                        <li>Merancang mekanika kontrol gerak, sistem interaksi objek, dan Finite State Machine (FSM) animasi karakter.</li>
+                        <li>Mengoptimalkan performa rendering tilemap 2D dan logic collision handling.</li>
+                    </ul>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <div>
+                            <div class="cv-item-role">Cross-Platform Mobile Application</div>
+                            <div class="cv-item-institution">Flutter, Dart, REST API, Clean Architecture</div>
+                        </div>
+                        <div class="cv-item-date">Mobile App</div>
+                    </div>
+                    <ul>
+                        <li>Mengembangkan aplikasi mobile Android/iOS dengan konsumsi REST API backend dan antarmuka interaktif yang elegan.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Kemampuan Tambahan -->
+            <section class="cv-section">
+                <h2 class="cv-section-title"><i class="fa-solid fa-award"></i> Kompetensi Tambahan</h2>
+                <p class="cv-desc">
+                    <strong>Bahasa:</strong> Bahasa Indonesia (Penutur Asli), Bahasa Inggris (Pemahaman Teknis & Profesional).<br>
+                    <strong>Soft Skills:</strong> Analitis, Problem Solving, Pemikiran Kritis, Komunikasi Tim, Cepat Beradaptasi dengan Framework Baru.
+                </p>
+            </section>
+
+            <div class="cv-footer-note">
+                Curriculum Vitae ini digenerate secara resmi dari portofolio online: <strong>dindaaprilla21.github.io</strong>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -43,6 +43,10 @@
             </nav>
 
             <div class="nav-actions">
+                <button type="button" class="btn btn-nav-cv open-cv-modal-btn" id="nav-cv-btn"
+                    title="Lihat Curriculum Vitae">
+                    <i class="fa-solid fa-file-lines"></i> <span>CV</span>
+                </button>
                 <a href="#contact" class="btn btn-neon-sm" id="nav-cta-btn">
                     <span>Hubungi Saya</span>
                 </a>
@@ -73,14 +77,17 @@
 
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-neon" id="hero-view-projects">
-                            <i class="fa-solid fa-rocket"></i> Lihat Proyek Akademik
+                            <i class="fa-solid fa-rocket"></i> Lihat Proyek
                         </a>
+                        <button type="button" class="btn btn-cv-glow open-cv-modal-btn" id="hero-cv-btn">
+                            <i class="fa-solid fa-file-arrow-down"></i> Unduh / Lihat CV
+                        </button>
                         <a href="https://github.com/dindaaprilla21" target="_blank" class="btn btn-outline"
                             id="hero-github-btn">
-                            <i class="fa-brands fa-github"></i> Profile GitHub
+                            <i class="fa-brands fa-github"></i> GitHub
                         </a>
                         <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
-                            <i class="fa-solid fa-envelope"></i> Kontak Saya
+                            <i class="fa-solid fa-envelope"></i> Kontak
                         </a>
                     </div>
 
@@ -107,6 +114,21 @@
                             <div class="profile-glow"></div>
                             <div class="profile-img-container">
                                 <img src="assets/dinda_profile.jpg" alt="Dinda Aprilla Dalimunthe" class="profile-img">
+                            </div>
+                        </div>
+
+                        <!-- Floating Interactive CV Card -->
+                        <div class="floating-cv-badge open-cv-modal-btn" id="floating-cv-badge" role="button"
+                            tabindex="0" title="Klik untuk lihat Curriculum Vitae">
+                            <div class="floating-cv-icon">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+                            <div class="floating-cv-info">
+                                <div class="floating-cv-top">
+                                    <span class="floating-cv-title">Curriculum Vitae</span>
+                                    <span class="floating-cv-pill">Verified</span>
+                                </div>
+                                <span class="floating-cv-desc">Preview & Unduh PDF</span>
                             </div>
                         </div>
                     </div>
@@ -303,10 +325,12 @@
                 </div>
 
                 <!-- GitHub Profile Banner -->
-                <a href="https://github.com/dindaaprilla21" target="_blank" class="github-profile-banner glass-panel" id="github-profile-banner">
+                <a href="https://github.com/dindaaprilla21" target="_blank" class="github-profile-banner glass-panel"
+                    id="github-profile-banner">
                     <div class="gpb-left">
                         <div class="gpb-avatar-wrap">
-                            <img src="https://avatars.githubusercontent.com/u/324610620?v=4" alt="GitHub Avatar dindaaprilla21" class="gpb-avatar" id="gh-avatar">
+                            <img src="https://avatars.githubusercontent.com/u/324610620?v=4"
+                                alt="GitHub Avatar dindaaprilla21" class="gpb-avatar" id="gh-avatar">
                             <div class="gpb-avatar-ring"></div>
                         </div>
                         <div class="gpb-info">
@@ -336,30 +360,18 @@
                 <div class="github-stats-grid">
                     <div class="gh-stat-card glass-panel">
                         <h4 class="gh-card-title"><i class="fa-solid fa-chart-bar"></i> GitHub Statistics</h4>
-                        <img
-                            src="https://github-readme-stats.vercel.app/api?username=dindaaprilla21&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=06B6D4&text_color=C9D1D9"
-                            alt="GitHub Stats"
-                            class="gh-stats-img"
-                            loading="lazy"
-                        />
+                        <img src="https://github-readme-stats.vercel.app/api?username=dindaaprilla21&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=06B6D4&text_color=C9D1D9"
+                            alt="GitHub Stats" class="gh-stats-img" loading="lazy" />
                     </div>
                     <div class="gh-stat-card glass-panel">
                         <h4 class="gh-card-title"><i class="fa-solid fa-code"></i> Most Used Languages</h4>
-                        <img
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=dindaaprilla21&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=C9D1D9&langs_count=8"
-                            alt="Top Languages"
-                            class="gh-stats-img"
-                            loading="lazy"
-                        />
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dindaaprilla21&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=C9D1D9&langs_count=8"
+                            alt="Top Languages" class="gh-stats-img" loading="lazy" />
                     </div>
                     <div class="gh-stat-card gh-streak-card glass-panel">
                         <h4 class="gh-card-title"><i class="fa-solid fa-fire"></i> Coding Streak</h4>
-                        <img
-                            src="https://streak-stats.demolab.com?user=dindaaprilla21&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=A855F7&fire=06B6D4&currStreakLabel=A855F7&sideNums=C9D1D9&sideLabels=C9D1D9"
-                            alt="GitHub Streak"
-                            class="gh-stats-img"
-                            loading="lazy"
-                        />
+                        <img src="https://streak-stats.demolab.com?user=dindaaprilla21&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=A855F7&fire=06B6D4&currStreakLabel=A855F7&sideNums=C9D1D9&sideLabels=C9D1D9"
+                            alt="GitHub Streak" class="gh-stats-img" loading="lazy" />
                     </div>
                 </div>
 
@@ -371,20 +383,18 @@
                             Lihat di GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
-                    <img
-                        src="https://ghchart.rshah.org/A855F7/dindaaprilla21"
-                        alt="GitHub Contribution Chart"
-                        class="gh-contrib-chart"
-                        loading="lazy"
-                    />
+                    <img src="https://ghchart.rshah.org/A855F7/dindaaprilla21" alt="GitHub Contribution Chart"
+                        class="gh-contrib-chart" loading="lazy" />
                 </div>
 
                 <!-- CTA to GitHub -->
                 <div class="gh-cta-row">
-                    <a href="https://github.com/dindaaprilla21" target="_blank" class="btn btn-neon" id="github-view-all-btn">
+                    <a href="https://github.com/dindaaprilla21" target="_blank" class="btn btn-neon"
+                        id="github-view-all-btn">
                         <i class="fa-brands fa-github"></i> Lihat Semua Repository di GitHub
                     </a>
-                    <a href="https://github.com/dindaaprilla21/dinda-portfolio" target="_blank" class="btn btn-outline" id="github-portfolio-repo-btn">
+                    <a href="https://github.com/dindaaprilla21/dinda-portfolio" target="_blank" class="btn btn-outline"
+                        id="github-portfolio-repo-btn">
                         <i class="fa-solid fa-code-branch"></i> Source Code Portofolio Ini
                     </a>
                 </div>
@@ -459,7 +469,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p1">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/reminder-ai" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/reminder-ai"
+                                    target="_blank" class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -473,7 +484,8 @@
                             <div class="visual-art">
                                 <div class="art-desa">
                                     <i class="fa-solid fa-building-columns desa-icon"></i>
-                                    <div class="bot-badge-mini"><i class="fa-solid fa-robot"></i> n8n Chatbot & Supabase</div>
+                                    <div class="bot-badge-mini"><i class="fa-solid fa-robot"></i> n8n Chatbot & Supabase
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -486,18 +498,21 @@
                             </div>
                             <h3 class="card-title">Web Administrasi Desa Legok</h3>
                             <p class="card-desc">
-                                Platform portal pelayanan publik digital terpadu untuk Desa Legok. Memuat layanan mandiri
+                                Platform portal pelayanan publik digital terpadu untuk Desa Legok. Memuat layanan
+                                mandiri
                                 surat online (SKTM, Domisili, Pengantar), pengaduan warga, serta floating AI Chatbot
                                 interaktif berbasis n8n workflow dan database Supabase.
                             </p>
                             <div class="project-metric-badge">
-                                <i class="fa-solid fa-robot"></i> Integrasi: <strong>n8n AI Chatbot & Supabase DB</strong>
+                                <i class="fa-solid fa-robot"></i> Integrasi: <strong>n8n AI Chatbot & Supabase
+                                    DB</strong>
                             </div>
                             <div class="card-actions">
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p6">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-administrasi-desa" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-administrasi-desa"
+                                    target="_blank" class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -537,7 +552,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p5">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/game-fly-hero" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/game-fly-hero"
+                                    target="_blank" class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -574,7 +590,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p4">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-karaoke" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/web-karaoke"
+                                    target="_blank" class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -609,7 +626,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p3">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/pemesanan-tiket" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/pemesanan-tiket"
+                                    target="_blank" class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -663,7 +681,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p7">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/mental-health-classification" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/mental-health-classification" target="_blank"
+                                    class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -711,7 +730,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p8">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/food-image-classification" target="_blank" class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/food-image-classification" target="_blank"
+                                    class="btn btn-github-card">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -736,71 +756,103 @@
                 <div class="contact-wrapper">
                     <!-- Contact Info Card -->
                     <div class="contact-info glass-panel">
-                        <h3>Informasi Kontak</h3>
-                        <p>Saya terbuka untuk kesempatan kerja full-time, contract, maupun kolaborasi proyek software
-                            development, AI/ML & Game Dev.</p>
+                        <div class="contact-info-top">
+                            <div class="contact-status-pill">
+                                <span class="status-dot"></span>
+                                <span>Tersedia untuk Peluang Baru</span>
+                            </div>
+                            <h3 class="contact-info-title">Informasi Kontak</h3>
+                            <p class="contact-info-desc">
+                                Terbuka untuk kesempatan kerja full-time, remote/hybrid, maupun kolaborasi proyek
+                                software development & AI.
+                            </p>
 
-                        <div class="info-list">
-                            <div class="info-item">
-                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                                <div>
-                                    <span class="info-label">Email</span>
-                                    <a href="mailto:da133450@gmail.com" class="info-val">da133450@gmail.com</a>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="info-content">
+                                        <span class="info-label">Email</span>
+                                        <div class="info-val-wrap">
+                                            <a href="mailto:da133450@gmail.com" class="info-val">da133450@gmail.com</a>
+                                            <button type="button" class="btn-copy-email" id="copy-email-btn"
+                                                title="Salin Email">
+                                                <i class="fa-regular fa-clone"></i>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                <div>
-                                    <span class="info-label">Lokasi</span>
-                                    <span class="info-val">Indonesia</span>
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="info-content">
+                                        <span class="info-label">Lokasi</span>
+                                        <span class="info-val">Indonesia</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="info-item">
-                                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                                <div>
-                                    <span class="info-label">Status</span>
-                                    <span class="info-val">Fresh Graduate Teknik Informatika</span>
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                    <div class="info-content">
+                                        <span class="info-label">Status</span>
+                                        <span class="info-val">Fresh Graduate Teknik Informatika</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="social-links">
-                            <a href="https://github.com/dindaaprilla21" target="_blank" aria-label="GitHub Profile"
-                                class="social-btn"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-btn"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="mailto:da133450@gmail.com" aria-label="Email Direct" class="social-btn"><i
-                                    class="fa-solid fa-envelope"></i></a>
+                        <div class="contact-info-bottom">
+                            <span class="social-title">Media Sosial & Terhubung:</span>
+                            <div class="social-links">
+                                <a href="https://github.com/dindaaprilla21" target="_blank" aria-label="GitHub Profile"
+                                    class="social-btn"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+                                    class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:da133450@gmail.com" aria-label="Email Direct" class="social-btn"><i
+                                        class="fa-solid fa-envelope"></i></a>
+                            </div>
+                            <div class="response-note">
+                                <i class="fa-solid fa-bolt"></i> Respon Cepat &middot; Biasanya &lt; 24 jam
+                            </div>
                         </div>
                     </div>
 
                     <!-- Contact Form -->
                     <form class="contact-form glass-panel" id="contact-form">
-                        <div class="form-group">
-                            <label for="form-name">Nama Lengkap</label>
-                            <input type="text" id="form-name" placeholder="Masukkan nama Anda..." required>
+                        <div class="form-header">
+                            <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Kirim Pesan</h3>
+                            <p class="form-desc">Tinggalkan pesan Anda, saya akan merespon sesegera mungkin.</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name"><i class="fa-regular fa-user"></i> Nama Lengkap</label>
+                                <input type="text" id="form-name" placeholder="Nama Anda..." required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email"><i class="fa-regular fa-envelope"></i> Alamat Email</label>
+                                <input type="email" id="form-email" placeholder="nama@email.com" required>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="form-email">Alamat Email</label>
-                            <input type="email" id="form-email" placeholder="nama@email.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="form-subject">Subjek Pesan</label>
+                            <label for="form-subject"><i class="fa-solid fa-tag"></i> Subjek Pesan</label>
                             <input type="text" id="form-subject" placeholder="Tawaran Kerja / Proyek / Konsultasi"
                                 required>
                         </div>
 
                         <div class="form-group">
-                            <label for="form-message">Pesan Anda</label>
-                            <textarea id="form-message" rows="4" placeholder="Tuliskan pesan Anda di sini..."
-                                required></textarea>
+                            <label for="form-message"><i class="fa-regular fa-comment-dots"></i> Pesan Anda</label>
+                            <textarea id="form-message" rows="3"
+                                placeholder="Tuliskan pesan atau tawaran Anda di sini..." required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-neon btn-block" id="form-submit-btn">
-                            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Ke da133450@gmail.com
-                        </button>
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-send-message" id="form-submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+                            </button>
+                            <span class="direct-email-hint">
+                                atau via email: <a href="mailto:da133450@gmail.com">da133450@gmail.com</a>
+                            </span>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -812,8 +864,7 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <span class="logo-name">Dinda Aprilla Dalimunthe</span>
-                <p class="footer-tagline">Fresh Graduate Teknik Informatika · Software Developer & Data Science
-                    Enthusiast</p>
+                <p class="footer-tagline">Fresh Graduate Teknik Informatika · Software Developer & Data Science Enthusiast</p>
                 <a href="https://github.com/dindaaprilla21" target="_blank" class="footer-github-link">
                     <i class="fa-brands fa-github"></i> github.com/dindaaprilla21
                 </a>
@@ -827,6 +878,191 @@
             <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
             <div class="modal-content" id="modal-content">
                 <!-- Content will be injected dynamically via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive CV / Resume Modal -->
+    <div class="modal-overlay" id="cv-modal" aria-hidden="true">
+        <div class="modal-container cv-modal-container glass-panel">
+            <button class="modal-close" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
+
+            <div class="cv-toolbar">
+                <div class="cv-toolbar-left">
+                    <span class="cv-doc-badge"><i class="fa-solid fa-file-lines"></i> Curriculum Vitae</span>
+                    <span class="cv-status-dot"></span>
+                    <span class="cv-updated-text">Verified Profile</span>
+                </div>
+                <div class="cv-toolbar-actions">
+                    <button type="button" class="btn btn-neon-sm" id="cv-print-btn">
+                        <i class="fa-solid fa-print"></i> Cetak / PDF
+                    </button>
+                    <a href="assets/CV_Dinda_Aprilla_Dalimunthe.html" target="_blank" class="btn btn-outline-sm"
+                        id="cv-fullscreen-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Tab Baru
+                    </a>
+                </div>
+            </div>
+
+            <!-- Printable & Beautiful CV Sheet -->
+            <div class="cv-sheet" id="cv-printable-sheet">
+                <!-- Header -->
+                <div class="cv-header">
+                    <div class="cv-header-main">
+                        <h2 class="cv-name">Dinda Aprilla Dalimunthe</h2>
+                        <p class="cv-role">Fresh Graduate S1 Teknik Informatika &middot; Software Developer & Machine
+                            Learning Enthusiast</p>
+                        <div class="cv-contact-row">
+                            <span><i class="fa-solid fa-envelope"></i> da133450@gmail.com</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Indonesia</span>
+                            <a href="https://github.com/dindaaprilla21" target="_blank"><i
+                                    class="fa-brands fa-github"></i> github.com/dindaaprilla21</a>
+                            <span><i class="fa-solid fa-graduation-cap"></i> IPK 3.8+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-body-layout">
+                    <!-- Ringkasan Profil -->
+                    <div class="cv-section">
+                        <h3 class="cv-section-heading"><i class="fa-solid fa-user"></i> Ringkasan Profil</h3>
+                        <p class="cv-text">
+                            Fresh Graduate Sarjana Teknik Informatika dengan pemahaman mendalam dalam pemodelan
+                            <strong>Machine Learning & Deep Learning (Computer Vision)</strong>, rekayasa game 2D
+                            berbasis <strong>Godot Engine</strong>, serta aplikasi mobile berbasis
+                            <strong>Flutter</strong>. Berpengalaman melatih model transfer learning EfficientNetB3
+                            dengan akurasi 98%+, pra-pemrosesan data berskala besar (SMOTE, CatBoost, SHAP), serta
+                            rekayasa arsitektur perangkat lunak yang scalable dan berorientasi performa.
+                        </p>
+                    </div>
+
+                    <!-- Pendidikan -->
+                    <div class="cv-section">
+                        <h3 class="cv-section-heading"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h4 class="cv-item-title">Sarjana Komputer (S1) - Teknik Informatika</h4>
+                                    <span class="cv-item-company">Perguruan Tinggi Indonesia</span>
+                                </div>
+                                <span class="cv-item-period">Fresh Graduate &middot; IPK: 3.8+ / 4.00</span>
+                            </div>
+                            <p class="cv-text">
+                                Fokus Studi: Kecerdasan Buatan (Artificial Intelligence), Computer Vision, Rekayasa
+                                Perangkat Lunak, dan Pemrograman Mobile.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Keahlian Teknis -->
+                    <div class="cv-section">
+                        <h3 class="cv-section-heading"><i class="fa-solid fa-gears"></i> Keahlian Teknis (Tech Stack)
+                        </h3>
+                        <div class="cv-skills-grid">
+                            <div class="cv-skill-group">
+                                <h5>Bahasa Pemrograman</h5>
+                                <div class="cv-tags">
+                                    <span class="cv-tag">Python</span>
+                                    <span class="cv-tag">Dart</span>
+                                    <span class="cv-tag">GDScript</span>
+                                    <span class="cv-tag">C++</span>
+                                    <span class="cv-tag">JavaScript / HTML / CSS</span>
+                                    <span class="cv-tag">SQL</span>
+                                </div>
+                            </div>
+                            <div class="cv-skill-group">
+                                <h5>Data Science & AI</h5>
+                                <div class="cv-tags">
+                                    <span class="cv-tag">TensorFlow & Keras</span>
+                                    <span class="cv-tag">EfficientNetB3</span>
+                                    <span class="cv-tag">Transfer Learning</span>
+                                    <span class="cv-tag">CatBoost</span>
+                                    <span class="cv-tag">SMOTE</span>
+                                    <span class="cv-tag">SHAP</span>
+                                </div>
+                            </div>
+                            <div class="cv-skill-group">
+                                <h5>Frameworks & Tools</h5>
+                                <div class="cv-tags">
+                                    <span class="cv-tag">Flutter</span>
+                                    <span class="cv-tag">Godot Engine (2D)</span>
+                                    <span class="cv-tag">Git & GitHub</span>
+                                    <span class="cv-tag">VS Code</span>
+                                    <span class="cv-tag">Google Colab</span>
+                                </div>
+                            </div>
+                            <div class="cv-skill-group">
+                                <h5>Database & Backend</h5>
+                                <div class="cv-tags">
+                                    <span class="cv-tag">PostgreSQL</span>
+                                    <span class="cv-tag">MySQL</span>
+                                    <span class="cv-tag">REST API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio Proyek Unggulan -->
+                    <div class="cv-section">
+                        <h3 class="cv-section-heading"><i class="fa-solid fa-laptop-code"></i> Proyek Akademik Unggulan
+                        </h3>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h4 class="cv-item-title">Indian & Korean Food Classification</h4>
+                                    <span class="cv-item-role">Deep Learning & Computer Vision</span>
+                                </div>
+                                <span class="cv-item-period">Akurasi 98.70% Korea · 92.23% India</span>
+                            </div>
+                            <p class="cv-text">
+                                Mengembangkan sistem klasifikasi citra makanan menggunakan transfer learning
+                                EfficientNetB3 dengan augmentasi data canggih dan evaluasi metrik presisi.
+                            </p>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h4 class="cv-item-title">Game 2D Adventure & Physics</h4>
+                                    <span class="cv-item-role">Godot Engine & GDScript</span>
+                                </div>
+                                <span class="cv-item-period">Custom Physics & FSM</span>
+                            </div>
+                            <p class="cv-text">
+                                Merancang game 2D dengan mekanika kontrol gerak, custom physics collisions, Finite State
+                                Machine (FSM) animasi, dan rendering tilemap interaktif.
+                            </p>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h4 class="cv-item-title">Aplikasi Mobile Cross-Platform</h4>
+                                    <span class="cv-item-role">Flutter & Dart</span>
+                                </div>
+                                <span class="cv-item-period">Clean Architecture & REST API</span>
+                            </div>
+                            <p class="cv-text">
+                                Mengembangkan aplikasi mobile multi-platform dengan state management terstruktur dan
+                                konsumsi REST API backend.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills & Bahasa -->
+                    <div class="cv-section">
+                        <h3 class="cv-section-heading"><i class="fa-solid fa-award"></i> Karakter Kerja & Bahasa</h3>
+                        <div class="cv-misc-row">
+                            <p class="cv-text">
+                                <strong>Bahasa:</strong> Bahasa Indonesia (Native), Bahasa Inggris (Technical
+                                Proficiency).<br>
+                                <strong>Karakter Kerja:</strong> Problem Solver, Analitis, Detail-Oriented, Adaptif
+                                terhadap teknologi baru, dan Kolaboratif.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
