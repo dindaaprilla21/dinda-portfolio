@@ -1,0 +1,11 @@
+# Archives
+*.zip
+
+# Ignore heavy dataset folders in projects
+projects/food-image-classification/dataset_project/
+projects/food-image-classification/kfood_dataset/
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.tmp

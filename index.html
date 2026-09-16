@@ -79,9 +79,16 @@
                         <a href="#projects" class="btn btn-neon" id="hero-view-projects">
                             <i class="fa-solid fa-rocket"></i> Lihat Proyek
                         </a>
-                        <button type="button" class="btn btn-cv-glow open-cv-modal-btn" id="hero-cv-btn">
-                            <i class="fa-solid fa-file-arrow-down"></i> Unduh / Lihat CV
-                        </button>
+                        <div class="cv-action-group">
+                            <button type="button" class="btn btn-cv-glow open-cv-modal-btn" id="hero-cv-btn"
+                                title="Buka Pratinjau & Unduh Dokumen CV PDF">
+                                <i class="fa-solid fa-file-pdf"></i> Unduh / Lihat CV
+                            </button>
+                            <a href="assets/CV_Dinda_Aprilla_Dalimunthe.pdf" download="CV_Dinda_Aprilla_Dalimunthe.pdf"
+                                class="btn-cv-direct-download" title="Unduh Langsung File PDF CV (122 KB)">
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
                         <a href="https://github.com/dindaaprilla21" target="_blank" class="btn btn-outline"
                             id="hero-github-btn">
                             <i class="fa-brands fa-github"></i> GitHub
@@ -730,8 +737,8 @@
                                 <button class="btn btn-card-detail open-modal-btn" data-project="p8">
                                     <span>Detail Proyek</span> <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                                <a href="https://github.com/dindaaprilla21/food-image-classification" target="_blank"
-                                    class="btn btn-github-card">
+                                <a href="https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/food-image-classification" target="_blank"
+                                    class="btn btn-github-card" title="Buka Repository di GitHub">
                                     <i class="fa-brands fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -864,7 +871,8 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <span class="logo-name">Dinda Aprilla Dalimunthe</span>
-                <p class="footer-tagline">Fresh Graduate Teknik Informatika · Software Developer & Data Science Enthusiast</p>
+                <p class="footer-tagline">Fresh Graduate Teknik Informatika · Software Developer & Data Science
+                    Enthusiast</p>
                 <a href="https://github.com/dindaaprilla21" target="_blank" class="footer-github-link">
                     <i class="fa-brands fa-github"></i> github.com/dindaaprilla21
                 </a>
@@ -889,178 +897,30 @@
 
             <div class="cv-toolbar">
                 <div class="cv-toolbar-left">
-                    <span class="cv-doc-badge"><i class="fa-solid fa-file-lines"></i> Curriculum Vitae</span>
+                    <span class="cv-doc-badge"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae PDF</span>
                     <span class="cv-status-dot"></span>
-                    <span class="cv-updated-text">Verified Profile</span>
+                    <span class="cv-updated-text">Dinda Aprilla Dalimunthe</span>
                 </div>
                 <div class="cv-toolbar-actions">
-                    <button type="button" class="btn btn-neon-sm" id="cv-print-btn">
-                        <i class="fa-solid fa-print"></i> Cetak / PDF
-                    </button>
-                    <a href="assets/CV_Dinda_Aprilla_Dalimunthe.html" target="_blank" class="btn btn-outline-sm"
-                        id="cv-fullscreen-btn">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Tab Baru
+                    <a href="assets/CV_Dinda_Aprilla_Dalimunthe.pdf" download="CV_Dinda_Aprilla_Dalimunthe.pdf" class="btn btn-neon-sm" id="cv-download-btn" title="Unduh File PDF CV">
+                        <i class="fa-solid fa-download"></i> Unduh PDF
                     </a>
                 </div>
             </div>
 
-            <!-- Printable & Beautiful CV Sheet -->
-            <div class="cv-sheet" id="cv-printable-sheet">
-                <!-- Header -->
-                <div class="cv-header">
-                    <div class="cv-header-main">
-                        <h2 class="cv-name">Dinda Aprilla Dalimunthe</h2>
-                        <p class="cv-role">Fresh Graduate S1 Teknik Informatika &middot; Software Developer & Machine
-                            Learning Enthusiast</p>
-                        <div class="cv-contact-row">
-                            <span><i class="fa-solid fa-envelope"></i> da133450@gmail.com</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Indonesia</span>
-                            <a href="https://github.com/dindaaprilla21" target="_blank"><i
-                                    class="fa-brands fa-github"></i> github.com/dindaaprilla21</a>
-                            <span><i class="fa-solid fa-graduation-cap"></i> IPK 3.8+</span>
-                        </div>
+            <!-- PDF Viewer Dokumen Asli -->
+            <div class="cv-pdf-frame-wrapper">
+                <iframe src="assets/CV_Dinda_Aprilla_Dalimunthe.pdf#toolbar=1" class="cv-pdf-iframe" title="Dokumen CV Dinda Aprilla Dalimunthe PDF"></iframe>
+                <div class="cv-pdf-mobile-fallback">
+                    <div class="fallback-icon-wrap">
+                        <i class="fa-solid fa-file-pdf"></i>
                     </div>
-                </div>
-
-                <div class="cv-body-layout">
-                    <!-- Ringkasan Profil -->
-                    <div class="cv-section">
-                        <h3 class="cv-section-heading"><i class="fa-solid fa-user"></i> Ringkasan Profil</h3>
-                        <p class="cv-text">
-                            Fresh Graduate Sarjana Teknik Informatika dengan pemahaman mendalam dalam pemodelan
-                            <strong>Machine Learning & Deep Learning (Computer Vision)</strong>, rekayasa game 2D
-                            berbasis <strong>Godot Engine</strong>, serta aplikasi mobile berbasis
-                            <strong>Flutter</strong>. Berpengalaman melatih model transfer learning EfficientNetB3
-                            dengan akurasi 98%+, pra-pemrosesan data berskala besar (SMOTE, CatBoost, SHAP), serta
-                            rekayasa arsitektur perangkat lunak yang scalable dan berorientasi performa.
-                        </p>
-                    </div>
-
-                    <!-- Pendidikan -->
-                    <div class="cv-section">
-                        <h3 class="cv-section-heading"><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
-                        <div class="cv-item">
-                            <div class="cv-item-header">
-                                <div>
-                                    <h4 class="cv-item-title">Sarjana Komputer (S1) - Teknik Informatika</h4>
-                                    <span class="cv-item-company">Perguruan Tinggi Indonesia</span>
-                                </div>
-                                <span class="cv-item-period">Fresh Graduate &middot; IPK: 3.8+ / 4.00</span>
-                            </div>
-                            <p class="cv-text">
-                                Fokus Studi: Kecerdasan Buatan (Artificial Intelligence), Computer Vision, Rekayasa
-                                Perangkat Lunak, dan Pemrograman Mobile.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Keahlian Teknis -->
-                    <div class="cv-section">
-                        <h3 class="cv-section-heading"><i class="fa-solid fa-gears"></i> Keahlian Teknis (Tech Stack)
-                        </h3>
-                        <div class="cv-skills-grid">
-                            <div class="cv-skill-group">
-                                <h5>Bahasa Pemrograman</h5>
-                                <div class="cv-tags">
-                                    <span class="cv-tag">Python</span>
-                                    <span class="cv-tag">Dart</span>
-                                    <span class="cv-tag">GDScript</span>
-                                    <span class="cv-tag">C++</span>
-                                    <span class="cv-tag">JavaScript / HTML / CSS</span>
-                                    <span class="cv-tag">SQL</span>
-                                </div>
-                            </div>
-                            <div class="cv-skill-group">
-                                <h5>Data Science & AI</h5>
-                                <div class="cv-tags">
-                                    <span class="cv-tag">TensorFlow & Keras</span>
-                                    <span class="cv-tag">EfficientNetB3</span>
-                                    <span class="cv-tag">Transfer Learning</span>
-                                    <span class="cv-tag">CatBoost</span>
-                                    <span class="cv-tag">SMOTE</span>
-                                    <span class="cv-tag">SHAP</span>
-                                </div>
-                            </div>
-                            <div class="cv-skill-group">
-                                <h5>Frameworks & Tools</h5>
-                                <div class="cv-tags">
-                                    <span class="cv-tag">Flutter</span>
-                                    <span class="cv-tag">Godot Engine (2D)</span>
-                                    <span class="cv-tag">Git & GitHub</span>
-                                    <span class="cv-tag">VS Code</span>
-                                    <span class="cv-tag">Google Colab</span>
-                                </div>
-                            </div>
-                            <div class="cv-skill-group">
-                                <h5>Database & Backend</h5>
-                                <div class="cv-tags">
-                                    <span class="cv-tag">PostgreSQL</span>
-                                    <span class="cv-tag">MySQL</span>
-                                    <span class="cv-tag">REST API</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Portofolio Proyek Unggulan -->
-                    <div class="cv-section">
-                        <h3 class="cv-section-heading"><i class="fa-solid fa-laptop-code"></i> Proyek Akademik Unggulan
-                        </h3>
-
-                        <div class="cv-item">
-                            <div class="cv-item-header">
-                                <div>
-                                    <h4 class="cv-item-title">Indian & Korean Food Classification</h4>
-                                    <span class="cv-item-role">Deep Learning & Computer Vision</span>
-                                </div>
-                                <span class="cv-item-period">Akurasi 98.70% Korea · 92.23% India</span>
-                            </div>
-                            <p class="cv-text">
-                                Mengembangkan sistem klasifikasi citra makanan menggunakan transfer learning
-                                EfficientNetB3 dengan augmentasi data canggih dan evaluasi metrik presisi.
-                            </p>
-                        </div>
-
-                        <div class="cv-item">
-                            <div class="cv-item-header">
-                                <div>
-                                    <h4 class="cv-item-title">Game 2D Adventure & Physics</h4>
-                                    <span class="cv-item-role">Godot Engine & GDScript</span>
-                                </div>
-                                <span class="cv-item-period">Custom Physics & FSM</span>
-                            </div>
-                            <p class="cv-text">
-                                Merancang game 2D dengan mekanika kontrol gerak, custom physics collisions, Finite State
-                                Machine (FSM) animasi, dan rendering tilemap interaktif.
-                            </p>
-                        </div>
-
-                        <div class="cv-item">
-                            <div class="cv-item-header">
-                                <div>
-                                    <h4 class="cv-item-title">Aplikasi Mobile Cross-Platform</h4>
-                                    <span class="cv-item-role">Flutter & Dart</span>
-                                </div>
-                                <span class="cv-item-period">Clean Architecture & REST API</span>
-                            </div>
-                            <p class="cv-text">
-                                Mengembangkan aplikasi mobile multi-platform dengan state management terstruktur dan
-                                konsumsi REST API backend.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Soft Skills & Bahasa -->
-                    <div class="cv-section">
-                        <h3 class="cv-section-heading"><i class="fa-solid fa-award"></i> Karakter Kerja & Bahasa</h3>
-                        <div class="cv-misc-row">
-                            <p class="cv-text">
-                                <strong>Bahasa:</strong> Bahasa Indonesia (Native), Bahasa Inggris (Technical
-                                Proficiency).<br>
-                                <strong>Karakter Kerja:</strong> Problem Solver, Analitis, Detail-Oriented, Adaptif
-                                terhadap teknologi baru, dan Kolaboratif.
-                            </p>
-                        </div>
+                    <h4>Curriculum Vitae — Dinda Aprilla Dalimunthe</h4>
+                    <p>Format: PDF Resmi (122 KB)</p>
+                    <div class="fallback-btns">
+                        <a href="assets/CV_Dinda_Aprilla_Dalimunthe.pdf" download="CV_Dinda_Aprilla_Dalimunthe.pdf" class="btn btn-neon">
+                            <i class="fa-solid fa-download"></i> Unduh File PDF
+                        </a>
                     </div>
                 </div>
             </div>

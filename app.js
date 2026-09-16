@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         p8: {
             title: "Indian & Korean Food Classification",
             category: "Deep Learning · Computer Vision",
-            githubUrl: "https://github.com/dindaaprilla21/food-image-classification",
+            githubUrl: "https://github.com/dindaaprilla21/dinda-portfolio/tree/main/projects/food-image-classification",
             techStack: ["Python", "TensorFlow", "Keras", "EfficientNetB3", "Transfer Learning", "Image Augmentation"],
             description: "Mengembangkan sistem klasifikasi citra makanan India dan Korea menggunakan transfer learning EfficientNetB3. Dataset diproses melalui image resizing, normalization, augmentation, dan evaluasi menggunakan berbagai metrik klasifikasi.",
             features: [
@@ -231,9 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </span>
                 </div>
 
-                <div style="margin-top: 10px;">
+                <div style="margin-top: 14px;">
                     <a href="${data.githubUrl}" target="_blank" class="btn btn-neon-sm" style="display: inline-flex; align-items: center; gap: 8px;">
-                        <i class="fa-brands fa-github"></i> Buka Repository Kode di GitHub
+                        <i class="fa-brands fa-github"></i> Buka Repository di GitHub
                     </a>
                 </div>
             </div>
@@ -314,11 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    if (cvPrintBtn) {
-        cvPrintBtn.addEventListener('click', () => {
-            window.print();
-        });
-    }
+
 
     // ----------------------------------------------------------------------
     // 5. CONTACT FORM & TOAST NOTIFICATION

@@ -1,0 +1,6 @@
+# Large archives (>100MB exceeds GitHub push limit)
+*.zip
+
+# Raw image datasets (1.5 GB / 20,000+ images - refer to README.md for dataset access)
+dataset_project/
+kfood_dataset/
