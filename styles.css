@@ -422,6 +422,10 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
+.hero-sub-actions {
+    display: contents;
+}
+
 .btn-cv-glow {
     display: inline-flex;
     align-items: center;
@@ -1918,18 +1922,30 @@ h1, h2, h3, h4 {
 
 .modal-close {
     position: absolute;
-    top: 20px;
-    right: 24px;
-    background: none;
-    border: none;
-    color: var(--text-muted);
-    font-size: 2rem;
+    top: 16px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(13, 21, 39, 0.95);
+    border: 1.5px solid var(--neon-magenta);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
     cursor: pointer;
-    transition: var(--transition-fast);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 100;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 0, 127, 0.35);
 }
 
 .modal-close:hover {
-    color: var(--neon-magenta);
+    background: var(--neon-magenta);
+    border-color: var(--neon-magenta);
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.85);
+    transform: rotate(90deg) scale(1.08);
 }
 
 .modal-header-badge {
@@ -2005,6 +2021,7 @@ h1, h2, h3, h4 {
     padding-bottom: 16px;
     margin-bottom: 16px;
     border-bottom: 1px solid var(--glass-border);
+    padding-right: 58px;
     flex-wrap: wrap;
 }
 
@@ -2941,17 +2958,53 @@ a[href="#github"].nav-link { display: inline-flex; }
     }
 
     .hero-actions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         width: 100%;
-        max-width: 440px;
-        margin: 0 auto 28px;
+        max-width: 380px;
+        margin: 0 auto 26px;
     }
 
-    .hero-actions .btn {
+    .hero-actions > a.btn-neon {
         width: 100%;
-        padding: 11px 12px;
+        padding: 13px 18px;
+        font-size: 0.92rem;
+        justify-content: center;
+    }
+
+    .hero-actions .cv-action-group {
+        width: 100%;
+        display: flex;
+    }
+
+    .hero-actions .cv-action-group .btn-cv-glow {
+        flex: 1;
+        justify-content: center;
+        padding: 12px 14px;
+        font-size: 0.88rem;
+    }
+
+    .hero-actions .cv-quick-downloads {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .hero-actions .btn-cv-quick {
+        padding: 0 13px;
+        font-size: 0.82rem;
+    }
+
+    .hero-sub-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .hero-sub-actions .btn {
+        width: 100%;
+        padding: 11px 6px;
         font-size: 0.82rem;
         justify-content: center;
         white-space: nowrap;
@@ -3303,54 +3356,72 @@ a[href="#github"].nav-link { display: inline-flex; }
     }
 
     /* Modals */
+    .modal-overlay {
+        padding: 12px;
+    }
+
     .modal-container {
-        width: 95%;
+        width: 100%;
         max-width: 95vw;
-        max-height: 88vh;
-        max-height: 88dvh;
-        padding: 22px 16px;
-        border-radius: 16px;
-        margin: 16px auto;
+        max-height: 92vh;
+        max-height: 92dvh;
+        padding: 22px 18px 24px;
+        border-radius: 20px;
+        margin: auto;
     }
 
     .modal-close {
-        top: 10px;
-        right: 10px;
-        width: 34px;
-        height: 34px;
-        font-size: 1.3rem;
+        top: 14px;
+        right: 14px;
+        width: 36px;
+        height: 36px;
+        font-size: 1.15rem;
     }
 
     .cv-modal-container {
-        padding: 18px 14px;
+        padding: 18px 16px 22px;
+        border-radius: 20px;
     }
 
     .cv-toolbar {
         flex-direction: column;
         align-items: stretch;
         gap: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 14px;
         margin-bottom: 14px;
+        padding-right: 48px; /* Crucial: guarantees close button never touches any button */
+    }
+
+    .cv-toolbar-left {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .cv-lang-switch {
+        width: 100%;
+        display: flex;
+    }
+
+    .cv-lang-btn {
+        flex: 1;
+        justify-content: center;
+        padding: 8px 10px;
+        font-size: 0.8rem;
     }
 
     .cv-toolbar-actions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
         width: 100%;
+        display: flex;
     }
 
-    .cv-toolbar-actions #cv-download-btn {
-        grid-column: 1 / -1;
-    }
-
-    .cv-toolbar-actions .btn,
-    .cv-toolbar-actions .btn-neon-sm,
-    .cv-toolbar-actions .btn-outline-sm {
+    .cv-toolbar-actions #cv-download-btn,
+    .cv-toolbar-actions .btn {
         width: 100%;
         justify-content: center;
-        padding: 9px 10px;
-        font-size: 0.8rem;
+        padding: 11px 14px;
+        font-size: 0.86rem;
+    }
     }
 
     .cv-sheet {
@@ -3400,15 +3471,13 @@ a[href="#github"].nav-link { display: inline-flex; }
         font-size: 1.95rem;
     }
 
-    .hero-actions {
-        grid-template-columns: 1fr;
+    .hero-sub-actions {
+        grid-template-columns: 1fr 1fr;
         gap: 8px;
-        max-width: 100%;
     }
 
-    .hero-actions .btn {
-        padding: 12px 14px;
-        font-size: 0.86rem;
+    .hero-sub-actions #hero-contact-btn {
+        grid-column: span 2;
     }
 
     .hero-stats {
