@@ -451,4 +451,114 @@ document.addEventListener('DOMContentLoaded', () => {
             // Silently fallback to static defaults
         }
     })();
+
+    // ----------------------------------------------------------------------
+    // 7. PROFILE PHOTO INTERACTIVE 3D TILT EFFECT
+    // ----------------------------------------------------------------------
+    const profileTiltWrapper = document.getElementById('profile-tilt-wrapper');
+    const profileCard = document.getElementById('profile-card');
+
+    if (profileTiltWrapper && profileCard) {
+        let isHovered = false;
+
+        profileTiltWrapper.addEventListener('mouseenter', () => {
+            isHovered = true;
+            profileCard.style.animation = 'none';
+            profileCard.style.transition = 'transform 0.12s ease-out, box-shadow 0.3s ease, border-color 0.3s ease';
+        });
+
+        profileTiltWrapper.addEventListener('mousemove', (e) => {
+            if (!isHovered) return;
+            const rect = profileTiltWrapper.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            // Maximum tilt angle of 10 degrees
+            const rotateX = ((y - centerY) / centerY) * -9;
+            const rotateY = ((x - centerX) / centerX) * 9;
+
+            profileCard.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.025, 1.025, 1.025)`;
+        });
+
+        profileTiltWrapper.addEventListener('mouseleave', () => {
+            isHovered = false;
+            profileCard.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease';
+            profileCard.style.transform = 'translateY(0px) rotate(0deg)';
+            
+            // Re-enable floating breathing animation after smooth return
+            setTimeout(() => {
+                if (!isHovered) {
+                    profileCard.style.animation = 'floatPhoto 5s ease-in-out infinite alternate';
+                }
+            }, 600);
+        });
+    }
+
+    // ----------------------------------------------------------------------
+    // 8. DYNAMIC HERO STATS COUNT-UP ANIMATION
+    // ----------------------------------------------------------------------
+    const statElements = document.querySelectorAll('.stat-number[data-target]');
+    if ('IntersectionObserver' in window && statElements.length > 0) {
+        const statsObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.getAttribute('data-target'), 10);
+                    let current = 0;
+                    const duration = 1200;
+                    const stepTime = 50;
+                    const steps = duration / stepTime;
+                    const increment = target / steps;
+
+                    const counter = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            el.textContent = `${target}+`;
+                            clearInterval(counter);
+                        } else {
+                            el.textContent = `${Math.ceil(current)}+`;
+                        }
+                    }, stepTime);
+
+                    observer.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statElements.forEach(el => statsObserver.observe(el));
+    }
+
+    // ----------------------------------------------------------------------
+    // 9. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+    // ----------------------------------------------------------------------
+    if ('IntersectionObserver' in window) {
+        const revealTargets = document.querySelectorAll(
+            '.about-card, .timeline-card, .skill-category, .project-card, .contact-card, .github-profile-card, .section-header'
+        );
+
+        revealTargets.forEach((target, index) => {
+            target.classList.add('reveal-init');
+            // Add staggered delay based on sibling index
+            const siblingIndex = Array.from(target.parentElement.children).indexOf(target);
+            if (siblingIndex === 1) target.classList.add('delay-1');
+            else if (siblingIndex === 2) target.classList.add('delay-2');
+            else if (siblingIndex >= 3) target.classList.add('delay-3');
+        });
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealTargets.forEach(target => revealObserver.observe(target));
+    }
 });
