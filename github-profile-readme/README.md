@@ -8,7 +8,7 @@
 
 [![Portfolio](https://img.shields.io/badge/🌐_PORTFOLIO-da133450--ux.github.io-A855F7?style=for-the-badge&logoColor=white)](https://dindaaprilla21.github.io/dinda-portfolio)
 [![Email](https://img.shields.io/badge/📧_EMAIL-da133450@gmail.com-06B6D4?style=for-the-badge&logoColor=white)](mailto:da133450@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dinda-aprilla-b4a248398)
 
 </div>
 
