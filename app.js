@@ -314,7 +314,67 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // CV Language Switcher (Bahasa Indonesia vs English)
+    const cvLangBtns = document.querySelectorAll('.cv-lang-btn');
+    const cvPdfIframe = document.getElementById('cv-pdf-iframe');
+    const cvDownloadBtn = document.getElementById('cv-download-btn');
+    const cvDocBadge = document.getElementById('cv-doc-badge');
+    const cvFallbackTitle = document.getElementById('cv-fallback-title');
+    const cvFallbackDesc = document.getElementById('cv-fallback-desc');
+    const cvFallbackDownloadBtn = document.getElementById('cv-fallback-download-btn');
 
+    const switchCvLanguage = (lang) => {
+        cvLangBtns.forEach(btn => {
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        if (lang === 'en') {
+            if (cvPdfIframe) cvPdfIframe.src = 'assets/CV_Dinda_Aprilla_Dalimunthe_EN.pdf#toolbar=1';
+            if (cvDownloadBtn) {
+                cvDownloadBtn.href = 'assets/CV_Dinda_Aprilla_Dalimunthe_EN.pdf';
+                cvDownloadBtn.setAttribute('download', 'CV_Dinda_Aprilla_Dalimunthe_EN.pdf');
+                cvDownloadBtn.innerHTML = '<i class="fa-solid fa-download"></i> Unduh PDF (EN)';
+                cvDownloadBtn.title = 'Unduh File PDF CV Versi Bahasa Inggris (93 KB)';
+            }
+            if (cvDocBadge) {
+                cvDocBadge.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Curriculum Vitae (English)';
+            }
+            if (cvFallbackTitle) cvFallbackTitle.textContent = 'Curriculum Vitae — English Version';
+            if (cvFallbackDesc) cvFallbackDesc.textContent = 'Format: Official PDF (93 KB)';
+            if (cvFallbackDownloadBtn) {
+                cvFallbackDownloadBtn.href = 'assets/CV_Dinda_Aprilla_Dalimunthe_EN.pdf';
+                cvFallbackDownloadBtn.setAttribute('download', 'CV_Dinda_Aprilla_Dalimunthe_EN.pdf');
+            }
+        } else {
+            if (cvPdfIframe) cvPdfIframe.src = 'assets/CV_Dinda_Aprilla_Dalimunthe_ID.pdf#toolbar=1';
+            if (cvDownloadBtn) {
+                cvDownloadBtn.href = 'assets/CV_Dinda_Aprilla_Dalimunthe_ID.pdf';
+                cvDownloadBtn.setAttribute('download', 'CV_Dinda_Aprilla_Dalimunthe_ID.pdf');
+                cvDownloadBtn.innerHTML = '<i class="fa-solid fa-download"></i> Unduh PDF (ID)';
+                cvDownloadBtn.title = 'Unduh File PDF CV Versi Bahasa Indonesia (123 KB)';
+            }
+            if (cvDocBadge) {
+                cvDocBadge.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Curriculum Vitae (Indonesia)';
+            }
+            if (cvFallbackTitle) cvFallbackTitle.textContent = 'Curriculum Vitae — Versi Bahasa Indonesia';
+            if (cvFallbackDesc) cvFallbackDesc.textContent = 'Format: PDF Resmi (123 KB)';
+            if (cvFallbackDownloadBtn) {
+                cvFallbackDownloadBtn.href = 'assets/CV_Dinda_Aprilla_Dalimunthe_ID.pdf';
+                cvFallbackDownloadBtn.setAttribute('download', 'CV_Dinda_Aprilla_Dalimunthe_ID.pdf');
+            }
+        }
+    };
+
+    cvLangBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchCvLanguage(btn.dataset.lang);
+        });
+    });
 
     // ----------------------------------------------------------------------
     // 5. CONTACT FORM & TOAST NOTIFICATION
